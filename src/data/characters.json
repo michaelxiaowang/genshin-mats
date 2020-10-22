@@ -1,0 +1,23 @@
+{
+    "amber": {
+        "name": "Amber",
+        "type": "pyro",
+        "weapon": "bow",
+        "specialty": "small_lamp_grass",
+        "common": "arrowhead"
+    },
+    "kaeya": {
+        "name": "Kaeya",
+        "type": "cryo",
+        "weapon": "sword",
+        "specialty": "calla_lily",
+        "common": "insignia"
+    },
+    "lisa": {
+        "name": "Lisa",
+        "type": "electro",
+        "weapon": "catalyst",
+        "specialty": "valberry",
+        "common": "scroll"
+    }
+}

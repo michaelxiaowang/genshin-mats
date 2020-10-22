@@ -1,0 +1,122 @@
+{
+    "pyro_crystal_1": {
+        "name": "Agnidus Agate Sliver",
+        "type": "crystal"
+    },
+    "pyro_crystal_2": {
+        "name": "Agnidus Agate Fragment",
+        "type": "crystal"
+    },
+    "pyro_crystal_3": {
+        "name": "Agnidus Agate Chunk",
+        "type": "crystal"
+    },
+    "pyro_crystal_4": {
+        "name": "Agnidus Agate Gemstone",
+        "type": "crystal"
+    },
+    "cryo_crystal_1": {
+        "name": "Shivada Jade Sliver",
+        "type": "crystal"
+    },
+    "cryo_crystal_2": {
+        "name": "Shivada Jade Fragment",
+        "type": "crystal"
+    },
+    "cryo_crystal_3": {
+        "name": "Shivada Jade Chunk",
+        "type": "crystal"
+    },
+    "cryo_crystal_4": {
+        "name": "Shivada Jade Gemstone",
+        "type": "crystal"
+    },
+    "electro_crystal_1": {
+        "name": "Vajrada Amethyst Sliver",
+        "type": "crystal"
+    },
+    "electro_crystal_2": {
+        "name": "Vajrada Amethyst Fragment",
+        "type": "crystal"
+    },
+    "electro_crystal_3": {
+        "name": "Vajrada Amethyst Chunk",
+        "type": "crystal"
+    },
+    "electro_crystal_4": {
+        "name": "Vajrada Amethyst Gemstone",
+        "type": "crystal"
+    },
+    "pyro_elemental": {
+        "name": "Everflame Seed",
+        "type": "elemental"
+    },
+    "cryo_elemental": {
+        "name": "Hoarfrost Core",
+        "type": "elemental"
+    },
+    "electro_elemental": {
+        "name": "Lightning Prism",
+        "type": "elemental"
+    },
+    "small_lamp_grass": {
+        "name": "Small Lamp Grass",
+        "type": "speciality"
+    },
+    "calla_lily": {
+        "name": "Calla Lily",
+        "type": "speciality"
+    },
+    "valberry": {
+        "name": "Valberry",
+        "type": "speciality"
+    },
+    "slime_1": {
+        "name": "Slime Condensate",
+        "type": "common"
+    },
+    "slime_2": {
+        "name": "Slime Secretions",
+        "type": "common"
+    },
+    "slime_3": {
+        "name": "Slime Concentrate",
+        "type": "common"
+    },
+    "arrowhead_1": {
+        "name": "Firm Arrowhead",
+        "type": "common"
+    },
+    "arrowhead_2": {
+        "name": "Sharp Arrowhead",
+        "type": "common"
+    },
+    "arrowhead_3": {
+        "name": "Historic Arrowhead",
+        "type": "common"
+    },
+    "scroll_1": {
+        "name": "Divining Scroll",
+        "type": "common"
+    },
+    "scroll_2": {
+        "name": "Sealed Scroll",
+        "type": "common"
+    },
+    "scroll_3": {
+        "name": "Forbidden Curse Scroll",
+        "type": "common"
+    },
+    "insignia_1": {
+        "name": "Treasure Hoarder Insignia",
+        "type": "common"
+    },
+    "insignia_2": {
+        "name": "Silver Raven Insignia",
+        "type": "common"
+    },
+    "insignia_3": {
+        "name": "Golden Raven Insignia",
+        "type": "common"
+    }
+}

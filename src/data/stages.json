@@ -1,0 +1,64 @@
+{
+    "characters": [
+        {
+            "stage": 1,
+            "crystal_stg": 1,
+            "crystal_qty": 1,
+            "elemental_qty": 0,
+            "specialty_qty": 3,
+            "common_stg": 1,
+            "common_qty": 3,
+            "mora": 20000
+        },
+        {
+            "stage": 2,
+            "crystal_stg": 2,
+            "crystal_qty": 3,
+            "elemental_qty": 2,
+            "specialty_qty": 10,
+            "common_stg": 1,
+            "common_qty": 15,
+            "mora": 40000
+        },
+        {
+            "stage": 3,
+            "crystal_stg": 2,
+            "crystal_qty": 6,
+            "elemental_qty": 4,
+            "specialty_qty": 20,
+            "common_stg": 2,
+            "common_qty": 12,
+            "mora": 60000
+        },
+        {
+            "stage": 4,
+            "crystal_stg": 3,
+            "crystal_qty": 3,
+            "elemental_qty": 8,
+            "specialty_qty": 30,
+            "common_stg": 2,
+            "common_qty": 18,
+            "mora": 80000
+        },
+        {
+            "stage": 5,
+            "crystal_stg": 3,
+            "crystal_qty": 6,
+            "elemental_qty": 12,
+            "specialty_qty": 45,
+            "common_stg": 3,
+            "common_qty": 12,
+            "mora": 100000
+        },
+        {
+            "stage": 6,
+            "crystal_stg": 4,
+            "crystal_qty": 6,
+            "elemental_qty": 20,
+            "specialty_qty": 60,
+            "common_stg": 3,
+            "common_qty": 24,
+            "mora": 120000
+        }
+    ]
+}
