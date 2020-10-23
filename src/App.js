@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
@@ -53,16 +53,12 @@ function App() {
     //   </header>
     // </div>
     <div>
-    <div>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Amber.png'} alt="Amber"/>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Kaeya.png'} alt="Kaeya"/>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Lisa.png'} alt="Lisa"/>
+      {
+        Object.values(Characters).map(character => (
+          <img src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
+        ))
+      }
     </div>
-    <div>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Amber.png'} alt="Amber"/>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Kaeya.png'} alt="Kaeya"/>
-      <img src={process.env.PUBLIC_URL + '/images/characters/Lisa.png'} alt="Lisa"/>
-    </div></div>
   );
 }
 

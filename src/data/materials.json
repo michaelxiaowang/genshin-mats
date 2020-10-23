@@ -107,15 +107,15 @@
         "name": "Forbidden Curse Scroll",
         "type": "common"
     },
-    "insignia_1": {
+    "treasure_insignia_1": {
         "name": "Treasure Hoarder Insignia",
         "type": "common"
     },
-    "insignia_2": {
+    "treasure_insignia_2": {
         "name": "Silver Raven Insignia",
         "type": "common"
     },
-    "insignia_3": {
+    "treasure_insignia_3": {
         "name": "Golden Raven Insignia",
         "type": "common"
     }
