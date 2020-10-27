@@ -1,18 +1,18 @@
 {
-    "pyro_crystal_1": {
-        "name": "Agnidus Agate Sliver",
+    "anemo_crystal_1": {
+        "name": "Vayuda Turquoise Sliver",
         "type": "crystal"
     },
-    "pyro_crystal_2": {
-        "name": "Agnidus Agate Fragment",
+    "anemo_crystal_2": {
+        "name": "Vayuda Turquoise Fragment",
         "type": "crystal"
     },
-    "pyro_crystal_3": {
-        "name": "Agnidus Agate Chunk",
+    "anemo_crystal_3": {
+        "name": "Vayuda Turquoise Chunk",
         "type": "crystal"
     },
-    "pyro_crystal_4": {
-        "name": "Agnidus Agate Gemstone",
+    "anemo_crystal_4": {
+        "name": "Vayuda Turquoise Gemstone",
         "type": "crystal"
     },
     "cryo_crystal_1": {
@@ -47,8 +47,56 @@
         "name": "Vajrada Amethyst Gemstone",
         "type": "crystal"
     },
-    "pyro_elemental": {
-        "name": "Everflame Seed",
+    "geo_crystal_1": {
+        "name": "Prithiva Topaz Sliver",
+        "type": "crystal"
+    },
+    "geo_crystal_2": {
+        "name": "Prithiva Topaz Fragment",
+        "type": "crystal"
+    },
+    "geo_crystal_3": {
+        "name": "Prithiva Topaz Chunk",
+        "type": "crystal"
+    },
+    "geo_crystal_4": {
+        "name": "Prithiva Topaz Gemstone",
+        "type": "crystal"
+    },
+    "hydro_crystal_1": {
+        "name": "Varunada Lazurite Sliver",
+        "type": "crystal"
+    },
+    "hydro_crystal_2": {
+        "name": "Varunada Lazurite Fragment",
+        "type": "crystal"
+    },
+    "hydro_crystal_3": {
+        "name": "Varunada Lazurite Chunk",
+        "type": "crystal"
+    },
+    "hydro_crystal_4": {
+        "name": "Varunada Lazurite Gemstone",
+        "type": "crystal"
+    },
+    "pyro_crystal_1": {
+        "name": "Agnidus Agate Sliver",
+        "type": "crystal"
+    },
+    "pyro_crystal_2": {
+        "name": "Agnidus Agate Fragment",
+        "type": "crystal"
+    },
+    "pyro_crystal_3": {
+        "name": "Agnidus Agate Chunk",
+        "type": "crystal"
+    },
+    "pyro_crystal_4": {
+        "name": "Agnidus Agate Gemstone",
+        "type": "crystal"
+    },
+    "anemo_elemental": {
+        "name": "Hurricane Seed",
         "type": "elemental"
     },
     "cryo_elemental": {
@@ -57,6 +105,18 @@
     },
     "electro_elemental": {
         "name": "Lightning Prism",
+        "type": "elemental"
+    },
+    "geo_elemental": {
+        "name": "Basalt Pillar",
+        "type": "elemental"
+    },
+    "hydro_elemental": {
+        "name": "Cleansing Heart",
+        "type": "elemental"
+    },
+    "pyro_elemental": {
+        "name": "Everflame Seed",
         "type": "elemental"
     },
     "small_lamp_grass": {
@@ -92,7 +152,7 @@
         "type": "common"
     },
     "arrowhead_3": {
-        "name": "Historic Arrowhead",
+        "name": "Weathered Arrowhead",
         "type": "common"
     },
     "scroll_1": {

@@ -7,13 +7,13 @@ import './App.css';
 
 let characters = {
   "amber": {
-    stage: 4
+    stage: 5
   },
   "kaeya": {
-    stage: 0
+    stage: 5
   },
   "lisa": {
-    stage: 0
+    stage: 5
   }
 }
 
@@ -36,28 +36,21 @@ function App() {
   });
   console.log(materials);
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
     <div>
+      <div>
+        {
+          Object.values(Characters).map(character => (
+            <img key={character.name} src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
+          ))
+        }
+      </div>
+      <div>
       {
-        Object.values(Characters).map(character => (
-          <img src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
+        Object.values(Materials).map(material => (
+          <img key={material.name} width="45" height="45" src={process.env.PUBLIC_URL + '/images/materials/' + material.name.replaceAll(' ', '_').toLowerCase() + '.png'} alt={material.name}/>
         ))
       }
+      </div>
     </div>
   );
 }
