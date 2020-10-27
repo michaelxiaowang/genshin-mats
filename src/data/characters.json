@@ -5,7 +5,7 @@
         "weapon": "bow",
         "specialty": "small_lamp_grass",
         "common": "arrowhead",
-        "talent_boss": "",
+        "talent_boss": "dvalins_sigh",
         "talent_book": "freedom"
     },
     "barbara": {
@@ -32,7 +32,7 @@
         "weapon": "sword",
         "specialty": "windwheel_aster",
         "common": "treasure_insignia",
-        "talent_boss": "",
+        "talent_boss": "dvalins_plume",
         "talent_book": "resistance"
     },
     "chongyun": {
@@ -104,7 +104,7 @@
         "weapon": "catalyst",
         "specialty": "valberry",
         "common": "scroll",
-        "talent_boss": "",
+        "talent_boss": "dvalins_claw",
         "talent_book": "ballad"
     },
     "mona": {
@@ -131,7 +131,7 @@
         "weapon": "claymore",
         "specialty": "valberry",
         "common": "mask",
-        "talent_boss": "",
+        "talent_boss": "dvalins_claw",
         "talent_book": "resistance"
     },
     "qiqi": {
@@ -157,8 +157,8 @@
         "type": "anemo",
         "weapon": "catalyst",
         "specialty": "windwheel_aster",
-        "common": "nector",
-        "talent_boss": "",
+        "common": "nectar",
+        "talent_boss": "spirit_locket_of_boreas",
         "talent_book": "freedom"
     },
     "venti": {
@@ -176,7 +176,7 @@
         "weapon": "polearm",
         "specialty": "jueyun_chili",
         "common": "slime",
-        "talent_boss": "",
+        "talent_boss": "dvalins_claw",
         "talent_book": "diligence"
     },
     "xingqiu": {
@@ -185,7 +185,7 @@
         "weapon": "sword",
         "specialty": "silk_flower",
         "common": "mask",
-        "talent_boss": "",
+        "talent_boss": "tail_of_boreas",
         "talent_book": "gold"
     }
 }
