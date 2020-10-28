@@ -1,9 +1,14 @@
 import React from 'react';
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
 
 import './App.css';
+import CharactersPage from './components/CharactersPage';
+import TalentsPage from './components/TalentsPage';
+import WeaponsPage from './components/WeaponsPage';
+import MaterialsPage from './components/MaterialsPage';
 
 let characters = {
   "amber": {
@@ -16,8 +21,6 @@ let characters = {
     stage: 5
   }
 }
-
-let characterLevels = [1,2,3,4,5,6]
 
 function App() {
   let materials = {};
@@ -38,40 +41,31 @@ function App() {
   });
   console.log(materials);
   return (
-    <div>
-      <nav className="navbar">
-        <ul>
-          <li><a href="">Characters</a></li>
-          <li><a href="">Talents</a></li>
-          <li><a href="">Weapons</a></li>
-          <li><a href="">Materials</a></li>
-        </ul>
-      </nav>
-      <div className="character-list">
+    <HashRouter>
+      <div>
+        <nav className="navbar">
+          <ul>
+            <li><NavLink to="/">Characters</NavLink></li>
+            <li><NavLink to="/Talents">Talents</NavLink></li>
+            <li><NavLink to="/Weapons">Weapons</NavLink></li>
+            <li><NavLink to="/Materials">Materials</NavLink></li>
+          </ul>
+        </nav>
+        <div className="content">
+          <Route exact path="/" render={() => (<CharactersPage characters={Characters}></CharactersPage>)}></Route>
+          <Route path="/Talents" component={TalentsPage}></Route>
+          <Route path="/Weapons" component={WeaponsPage}></Route>
+          <Route path="/Materials" component={MaterialsPage}></Route>
+        </div>
+        {/* <div>
         {
-          Object.values(Characters).map(character => (
-            <div key={character.name} className="character-portrait">
-              <img className="character-icon" src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
-              <div className="star-level">
-                {
-                  characterLevels.map(level => (
-                    <img className="star" key={level} src={process.env.PUBLIC_URL + '/images/star.png'}/>
-                  ))
-                }
-              </div>
-              <label className="character-name">{character.name}</label>
-            </div>
+          Object.values(Materials).map(material => (
+            <img key={material.name} width="45" height="45" src={process.env.PUBLIC_URL + '/images/materials/' + material.name.replaceAll(' ', '_').toLowerCase() + '.png'} alt={material.name}/>
           ))
         }
+        </div> */}
       </div>
-      {/* <div>
-      {
-        Object.values(Materials).map(material => (
-          <img key={material.name} width="45" height="45" src={process.env.PUBLIC_URL + '/images/materials/' + material.name.replaceAll(' ', '_').toLowerCase() + '.png'} alt={material.name}/>
-        ))
-      }
-      </div> */}
-    </div>
+    </HashRouter>
   );
 }
 
