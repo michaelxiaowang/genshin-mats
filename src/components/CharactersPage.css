@@ -1,36 +1,59 @@
 .character-list {
-    background: #222431;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  .character-portrait {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
-  }
-  
-  .character-icon {
-    background: #36384a;
-    border-radius: 0.25rem;
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .character-name {
-    color: #a7b1c1;
-  }
-  
-  .star {
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-right: 0.1rem;
-    opacity: 0.4;
-    cursor: pointer;
-  }
+  background: #222431;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.character-portrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.character-icon {
+  background: #36384a;
+  border-radius: 0.25rem;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.character-name {
+  color: #a7b1c1;
+}
+
+.star-level {
+  transform: rotateY(180deg);
+}
+
+.star-level input {
+  display: none;
+}
+
+.star-level label {
+  display: inline-block;
+  cursor: pointer;
+  width: 0.8rem;
+  margin-right: 0.1rem;
+}
+
+.star-level label:after {
+  display: inline-block;
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url('star.png') no-repeat 0 0;
+  background-size: 100%;
+  opacity: 0.45;
+}
+
+.star-level label:hover:after,
+.star-level label:hover ~ label:after,
+.star-level input:checked ~ label:after {
+  opacity: 0.9;
+}

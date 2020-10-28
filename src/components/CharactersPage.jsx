@@ -13,7 +13,10 @@ function CharactersPage(props) {
               <div className="star-level">
                 {
                   characterLevels.map(level => (
-                    <img className="star" key={level} src={process.env.PUBLIC_URL + '/images/star.png'}/>
+                    <React.Fragment key={level}>
+                      <input type="radio" name={character.name} value={level} id={character.name + "" + level}></input>
+                      <label htmlFor={character.name + "" + level}></label>
+                    </React.Fragment>
                   ))
                 }
               </div>
