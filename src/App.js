@@ -41,7 +41,7 @@ function App() {
   });
   console.log(materials);
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <div>
         <nav className="navbar">
           <ul>
