@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
@@ -16,6 +16,8 @@ let characters = {
     stage: 5
   }
 }
+
+let characterLevels = [1,2,3,4,5,6]
 
 function App() {
   let materials = {};
@@ -37,20 +39,38 @@ function App() {
   console.log(materials);
   return (
     <div>
-      <div>
+      <nav className="navbar">
+        <ul>
+          <li><a href="">Characters</a></li>
+          <li><a href="">Talents</a></li>
+          <li><a href="">Weapons</a></li>
+          <li><a href="">Materials</a></li>
+        </ul>
+      </nav>
+      <div className="character-list">
         {
           Object.values(Characters).map(character => (
-            <img key={character.name} src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
+            <div key={character.name} className="character-portrait">
+              <img className="character-icon" src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'} alt={character.name}/>
+              <div className="star-level">
+                {
+                  characterLevels.map(level => (
+                    <img className="star" key={level} src={process.env.PUBLIC_URL + '/images/star.png'}/>
+                  ))
+                }
+              </div>
+              <label className="character-name">{character.name}</label>
+            </div>
           ))
         }
       </div>
-      <div>
+      {/* <div>
       {
         Object.values(Materials).map(material => (
           <img key={material.name} width="45" height="45" src={process.env.PUBLIC_URL + '/images/materials/' + material.name.replaceAll(' ', '_').toLowerCase() + '.png'} alt={material.name}/>
         ))
       }
-      </div>
+      </div> */}
     </div>
   );
 }
