@@ -121,15 +121,67 @@
     },
     "small_lamp_grass": {
         "name": "Small Lamp Grass",
-        "type": "speciality"
-    },
-    "calla_lily": {
-        "name": "Calla Lily",
-        "type": "speciality"
+        "type": "specialty"
     },
     "valberry": {
         "name": "Valberry",
-        "type": "speciality"
+        "type": "specialty"
+    },
+    "windwheel_aster": {
+        "name": "Windwheel Aster",
+        "type": "specialty"
+    },
+    "wolfhook": {
+        "name": "Wolfhook",
+        "type": "specialty"
+    },
+    "dandelion_seed": {
+        "name": "Dandelion Seed",
+        "type": "specialty"
+    },
+    "cecilia": {
+        "name": "Cecilia",
+        "type": "specialty"
+    },
+    "philanemo_mushroom": {
+        "name": "Philanemo Mushroom",
+        "type": "specialty"
+    },
+    "calla_lily": {
+        "name": "Calla Lily",
+        "type": "specialty"
+    },
+    "cor_lapis": {
+        "name": "Cor Lapis",
+        "type": "specialty"
+    },
+    "jueyun_chili": {
+        "name": "Jueyun Chili",
+        "type": "specialty"
+    },
+    "qingxin": {
+        "name": "Qingxin",
+        "type": "specialty"
+    },
+    "violetgrass": {
+        "name": "Violetgrass",
+        "type": "specialty"
+    },
+    "noctilucous_jade": {
+        "name": "Noctilucous Jade",
+        "type": "specialty"
+    },
+    "silk_flower": {
+        "name": "Silk Flower",
+        "type": "specialty"
+    },
+    "glaze_lily": {
+        "name": "Glaze Lily",
+        "type": "specialty"
+    },
+    "starconch": {
+        "name": "Starconch",
+        "type": "specialty"
     },
     "slime_1": {
         "name": "Slime Condensate",
@@ -141,6 +193,18 @@
     },
     "slime_3": {
         "name": "Slime Concentrate",
+        "type": "common"
+    },
+    "mask_1": {
+        "name": "Damaged Mask",
+        "type": "common"
+    },
+    "mask_2": {
+        "name": "Stained Mask",
+        "type": "common"
+    },
+    "mask_3": {
+        "name": "Ominous Mask",
         "type": "common"
     },
     "arrowhead_1": {
@@ -167,6 +231,78 @@
         "name": "Forbidden Curse Scroll",
         "type": "common"
     },
+    "horn_1": {
+        "name": "Heavy Horn",
+        "type": "common"
+    },
+    "horn_2": {
+        "name": "Black Copper Horn",
+        "type": "common"
+    },
+    "horn_3": {
+        "name": "Black Crystal Horn",
+        "type": "common"
+    },
+    "ley_line_1": {
+        "name": "Dead Ley Line Branches",
+        "type": "common"
+    },
+    "ley_line_2": {
+        "name": "Dead Ley Line Leaves",
+        "type": "common"
+    },
+    "ley_line_3": {
+        "name": "Ley Line Sprouts",
+        "type": "common"
+    },
+    "chaos_1": {
+        "name": "Chaos Device",
+        "type": "common"
+    },
+    "chaos_2": {
+        "name": "Chaos Circuit",
+        "type": "common"
+    },
+    "chaos_3": {
+        "name": "Chaos Core",
+        "type": "common"
+    },
+    "mist_1": {
+        "name": "Mist Flower Pollen",
+        "type": "common"
+    },
+    "mist_2": {
+        "name": "Mist Grass",
+        "type": "common"
+    },
+    "mist_3": {
+        "name": "Mist Grass Wick",
+        "type": "common"
+    },
+    "knife_1": {
+        "name": "Hunters Sacrificial Knife",
+        "type": "common"
+    },
+    "knife_2": {
+        "name": "Agents Sacrificial Knife",
+        "type": "common"
+    },
+    "knife_3": {
+        "name": "Inspectors Sacrificial Knife",
+        "type": "common"
+    },
+    "fatui_insignia_1": {
+        "name": "Recruits Insignia",
+        "type": "common"
+    },
+    "fatui_insignia_2": {
+        "name": "Sergeants Insignia",
+        "type": "common"
+    },
+    "fatui_insignia_3": {
+        "name": "Lieutenants Insignia",
+        "type": "common"
+    },
     "treasure_insignia_1": {
         "name": "Treasure Hoarder Insignia",
         "type": "common"
@@ -177,6 +313,30 @@
     },
     "treasure_insignia_3": {
         "name": "Golden Raven Insignia",
+        "type": "common"
+    },
+    "bone_1": {
+        "name": "Fragile Bone Shard",
+        "type": "common"
+    },
+    "bone_2": {
+        "name": "Sturdy Bone Shard",
+        "type": "common"
+    },
+    "bone_3": {
+        "name": "Fossilized Bone Shard",
+        "type": "common"
+    },
+    "nectar_1": {
+        "name": "Whopperflower Nectar",
+        "type": "common"
+    },
+    "nectar_2": {
+        "name": "Shimmering Nectar",
+        "type": "common"
+    },
+    "nectar_3": {
+        "name": "Energy Nectar",
         "type": "common"
     }
 }
