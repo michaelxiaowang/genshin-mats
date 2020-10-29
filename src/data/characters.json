@@ -161,6 +161,13 @@
         "talent_boss": "spirit_locket_of_boreas",
         "talent_book": "freedom"
     },
+    "traveler": {
+        "name": "Traveler",
+        "type": "flex",
+        "weapon": "catalyst",
+        "specialty": "windwheel_aster",
+        "common": "nectar"
+    },
     "venti": {
         "name": "Venti",
         "type": "anemo",

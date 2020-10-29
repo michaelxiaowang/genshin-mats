@@ -37,10 +37,13 @@ class CharactersPage extends React.Component {
                   src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'}
                   alt={character.name}
                   onClick={(e) => this.toggleCharacter(character.name, e)}/>
-                <img
-                  className={"character-type " + (this.selected(character.name) ? '' : 'inactive')}
-                  src={process.env.PUBLIC_URL + '/images/' + character.type + '.png'}
-                  alt={character.type}/>
+                {
+                  character.name !== 'Traveler' &&
+                  <img
+                    className={"character-type " + (this.selected(character.name) ? '' : 'inactive')}
+                    src={process.env.PUBLIC_URL + '/images/' + character.type + '.png'}
+                    alt={character.type}/>
+                }
                 <div className="star-level">
                   {
                     characterLevels.map(level => (

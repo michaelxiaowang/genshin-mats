@@ -47,7 +47,7 @@ class App extends React.Component {
         <div>
           <nav className="navbar">
             <ul>
-              <li><NavLink to="/">Characters</NavLink></li>
+              <li><NavLink exact to="/">Characters</NavLink></li>
               <li><NavLink to="/Talents">Talents</NavLink></li>
               <li><NavLink to="/Weapons">Weapons</NavLink></li>
               <li><NavLink to="/Materials">Materials</NavLink></li>

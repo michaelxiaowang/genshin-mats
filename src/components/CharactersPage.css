@@ -1,10 +1,11 @@
 .character-list {
-  background: #222431;
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  margin: auto;
+  max-width: 65rem;
 }
 
 .character-portrait {

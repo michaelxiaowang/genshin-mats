@@ -6,28 +6,44 @@ body {
 }
 
 nav {
-  padding: 0;
-  margin: 0;
-  background-color: #1d1f29;
+  background-color: #222431;
+  height: 2.5rem;
   color: white;
 }
 
-ul {
+nav ul {
+  margin: auto;
+  width: 65rem;
   height: 100%;
   list-style-type: none;
+  display: flex;
 }
 
-li {
-  display: inline;
+nav li {
   margin-right: 1rem;
+  line-height: 2.5rem;
 }
 
-a {
+nav li a {
+  display: inline-block;
+  height: 2.5rem;
   text-decoration: none;
   color: white;
   opacity: 0.6;
 }
 
-a:hover {
+nav li a:hover,
+nav li a.active,
+nav li a:active {
+  line-height: 2.5rem;
   opacity: 1;
+  border-bottom: 0.25rem solid#42a5f5;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: auto;
+  margin-top: 1rem;
+  background: #222431;
+  max-width: 65rem;
 }
