@@ -2,12 +2,10 @@ import React from 'react';
 import "./MaterialsPage.css";
 
 function MaterialsPage(props) {
-    console.log(props);
     let materials = {};
-    Object.entries(props.state).forEach(([key, value]) => {
+    Object.entries(props.state).filter(([key, value]) => value['stage'] !== -1).forEach(([key, value]) => {
         const element = props.characters[key.toLowerCase()].type;
         const elemental = props.materials[element + '_elemental'].name;
-        console.log(props.materials);
         const specialty = props.materials[props.characters[key.toLowerCase()].specialty].name;
         for (let i = value.stage; i < 6; i++) {
             let stage = props.stages.characters[i];
@@ -20,20 +18,31 @@ function MaterialsPage(props) {
             materials.mora = materials.hasOwnProperty('mora') ? materials.mora + stage.mora: stage.mora
         }
     });
+    let names = Object.keys(materials);
+    names = Object.values(props.materials).map(material => material.name).filter(name  => names.includes(name));
+    console.log(materials);
+    console.log(names);
+
     return (
         <div>
             <h1>Materials</h1>
-            <div>
+            <div className="material-list">
                 {
-                    Object.entries(materials).map(([key, value]) => (
-                        <div>
-                            <h3>{key} X {value}</h3>
+                    names.map(material => (
+                        <div className="material">
+                            <img className="material-image" src={getImagePath(material)} alt={material}></img>
+                            <label className="material-text">{material} - {materials[material]}</label>
                         </div>
                     ))
                 }
             </div>
         </div>
     )
+}
+
+function getImagePath(material) {
+    console.log(material.toLowerCase().replace(' ', '_'));
+    return process.env.PUBLIC_URL + '/images/materials/' + material.toLowerCase().replaceAll(' ', '_') + '.png'
 }
 
 export default MaterialsPage

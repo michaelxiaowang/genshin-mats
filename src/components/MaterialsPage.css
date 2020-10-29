@@ -1,0 +1,25 @@
+h1 {
+    color: white;
+    margin-left: 1rem;
+}
+
+.material-list {
+    margin-left: 1rem;
+}
+
+.material {
+    height: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.material-image {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.material-text {
+    color: white;
+}
