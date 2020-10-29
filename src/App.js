@@ -10,63 +10,71 @@ import TalentsPage from './components/TalentsPage';
 import WeaponsPage from './components/WeaponsPage';
 import MaterialsPage from './components/MaterialsPage';
 
-let characters = {
-  "amber": {
-    stage: 5
-  },
-  "kaeya": {
-    stage: 5
-  },
-  "lisa": {
-    stage: 5
-  }
-}
+class App extends React.Component {
 
-function App() {
-  let materials = {};
-  Object.entries(characters).forEach(([key, value]) => {
-    const element = Characters[key].type;
-    const elemental = Materials[element + '_elemental'].name;
-    const specialty = Materials[Characters[key].specialty].name;
-    for (let i = value.stage; i < 6; i++) {
-      let stage = Stages.characters[i];
-      const crystal = Materials[element + '_crystal_' + stage.crystal_stg].name;
-      const common = Materials[Characters[key].common + '_' + stage.common_stg].name;
-      materials[crystal] = materials.hasOwnProperty(crystal) ? materials[crystal] + stage.crystal_qty : stage.crystal_qty;
-      materials[elemental] = materials.hasOwnProperty(elemental) ? materials[elemental] + stage.elemental_qty : stage.elemental_qty;
-      materials[specialty] = materials.hasOwnProperty(specialty) ? materials[specialty] + stage.specialty_qty : stage.specialty_qty;
-      materials[common] = materials.hasOwnProperty(common) ? materials[common] + stage.common_qty : stage.common_qty;
-      materials.mora = materials.hasOwnProperty('mora') ? materials.mora + stage.mora: stage.mora
+  constructor(props) {
+    super(props)
+    this.toggleCharacter = this.toggleCharacter.bind(this);
+    this.setCharacterStage = this.setCharacterStage.bind(this);
+    this.state = JSON.parse(localStorage.getItem('characters')) || { };
+    // this.state = { }
+    console.log(this.state);
+  }
+
+  toggleCharacter(character) {
+    if (this.state.hasOwnProperty(character)) {
+      if (this.state[character].stage === -1) {
+        this.persistState({[character]: {stage: 0}});
+      } else {
+        this.persistState({[character]: {stage: -1}});
+      }
+    } else {
+      this.persistState({[character]: {stage: 0}});
     }
-  });
-  console.log(materials);
-  return (
-    <HashRouter basename="/">
-      <div>
-        <nav className="navbar">
-          <ul>
-            <li><NavLink to="/">Characters</NavLink></li>
-            <li><NavLink to="/Talents">Talents</NavLink></li>
-            <li><NavLink to="/Weapons">Weapons</NavLink></li>
-            <li><NavLink to="/Materials">Materials</NavLink></li>
-          </ul>
-        </nav>
-        <div className="content">
-          <Route exact path="/" render={() => (<CharactersPage characters={Characters}></CharactersPage>)}></Route>
-          <Route path="/Talents" component={TalentsPage}></Route>
-          <Route path="/Weapons" component={WeaponsPage}></Route>
-          <Route path="/Materials" component={MaterialsPage}></Route>
+  }
+
+  setCharacterStage(character, stage) {
+    this.persistState({[character]: {stage}}); // e.target.value is supposed to be integer, but somehow casted as string
+  }
+
+  persistState(state) {
+    this.setState(state, () => localStorage.setItem('characters', JSON.stringify(this.state)));
+  }
+
+  render() {
+    return (
+      <HashRouter basename="/">
+        <div>
+          <nav className="navbar">
+            <ul>
+              <li><NavLink to="/">Characters</NavLink></li>
+              <li><NavLink to="/Talents">Talents</NavLink></li>
+              <li><NavLink to="/Weapons">Weapons</NavLink></li>
+              <li><NavLink to="/Materials">Materials</NavLink></li>
+            </ul>
+          </nav>
+          <div className="content">
+            <Route exact path="/" render={() => (
+              <CharactersPage
+                state={this.state}
+                characters={Characters}
+                toggleCharacter = {this.toggleCharacter}
+                setCharacterStage = {this.setCharacterStage}/>
+            )}/>
+            <Route path="/Talents" component={TalentsPage}></Route>
+            <Route path="/Weapons" component={WeaponsPage}></Route>
+            <Route path="/Materials" render={() => (
+              <MaterialsPage
+                state={this.state}
+                stages={Stages}
+                characters={Characters}
+                materials={Materials}/>
+            )}/>
+          </div>
         </div>
-        {/* <div>
-        {
-          Object.values(Materials).map(material => (
-            <img key={material.name} width="45" height="45" src={process.env.PUBLIC_URL + '/images/materials/' + material.name.replaceAll(' ', '_').toLowerCase() + '.png'} alt={material.name}/>
-          ))
-        }
-        </div> */}
-      </div>
-    </HashRouter>
-  );
+      </HashRouter>
+    );
+  }
 }
 
 export default App;
