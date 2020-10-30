@@ -164,7 +164,7 @@
     "traveler": {
         "name": "Traveler",
         "type": "flex",
-        "weapon": "catalyst",
+        "weapon": "sword",
         "specialty": "windwheel_aster",
         "common": "nectar"
     },

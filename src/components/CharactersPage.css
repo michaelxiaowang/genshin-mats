@@ -1,11 +1,61 @@
+.filters {
+  display: flex;
+  background: #1d1f29;
+  margin: 1rem 2rem 0 2rem;
+  padding: 0 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.filters ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.filters li {
+  margin: 0.25rem;
+}
+
+.filter {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.filter:hover {
+  background: #36384a;
+}
+
+.filter.active img,
+.filter:hover img {
+  opacity: 1;
+}
+
+.filter:focus {
+  outline: none;
+}
+
+.filter-image {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  opacity: 0.4;
+}
+
+.weapon-filters.filter-image {
+  padding: 0;
+}
+
 .character-list {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  margin: auto;
-  max-width: 65rem;
 }
 
 .character-portrait {
