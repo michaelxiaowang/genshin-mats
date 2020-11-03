@@ -89,6 +89,11 @@ img.inactive {
 
 .character-name {
   color: #a7b1c1;
+  text-decoration: none;
+}
+
+.character-name:hover {
+  color: white;
 }
 
 .star-level {

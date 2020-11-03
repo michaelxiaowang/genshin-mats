@@ -1,14 +1,14 @@
 import React from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
+import CharactersPage from './components/CharactersPage';
+import CharacterInfo from './components/CharacterInfo';
+import WeaponsPage from './components/WeaponsPage';
+import MaterialsPage from './components/MaterialsPage';
 import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
 
 import './App.css';
-import CharactersPage from './components/CharactersPage';
-import TalentsPage from './components/TalentsPage';
-import WeaponsPage from './components/WeaponsPage';
-import MaterialsPage from './components/MaterialsPage';
 
 class App extends React.Component {
 
@@ -17,8 +17,6 @@ class App extends React.Component {
     this.toggleCharacter = this.toggleCharacter.bind(this);
     this.setCharacterStage = this.setCharacterStage.bind(this);
     this.state = JSON.parse(localStorage.getItem('characters')) || { };
-    // this.state = { }
-    console.log(this.state);
   }
 
   toggleCharacter(character) {
@@ -47,21 +45,27 @@ class App extends React.Component {
         <div>
           <nav className="navbar">
             <ul>
-              <li><NavLink exact to="/">Characters</NavLink></li>
-              <li><NavLink to="/Talents">Talents</NavLink></li>
-              <li><NavLink to="/Weapons">Weapons</NavLink></li>
-              <li><NavLink to="/Materials">Materials</NavLink></li>
+              <li><NavLink exact to="/Characters">Characters</NavLink></li>
+              <li><NavLink exact to="/Weapons">Weapons</NavLink></li>
+              <li><NavLink exact to="/Materials">Materials</NavLink></li>
             </ul>
           </nav>
           <div className="content">
-            <Route exact path="/" render={() => (
+            <Route exact path="/">
+              <Redirect to="/Characters"/>
+            </Route>
+            <Route exact path="/Characters" render={() => (
               <CharactersPage
                 state={this.state}
                 characters={Characters}
                 toggleCharacter = {this.toggleCharacter}
                 setCharacterStage = {this.setCharacterStage}/>
             )}/>
-            <Route path="/Talents" component={TalentsPage}></Route>
+            <Route path="/Characters/:character" render={(props) => (
+              <CharacterInfo
+                {...props}
+                characters={Characters}/>
+            )}/>
             <Route path="/Weapons" component={WeaponsPage}></Route>
             <Route path="/Materials" render={() => (
               <MaterialsPage

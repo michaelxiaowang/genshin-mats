@@ -11,8 +11,6 @@ function MaterialsPage(props) {
             const specialty = props.materials[props.characters[key.toLowerCase()].specialty].name;
             for (let i = value.stage; i < 6; i++) {
                 let stage = props.stages.characters[i];
-                console.log(key);
-                console.log(value);
                 const crystal = props.materials[(element === 'flex' ? 'diamond' : element)+ '_crystal_' + stage.crystal_stg].name;
                 const common = props.materials[props.characters[key.toLowerCase()].common + '_' + stage.common_stg].name;
                 materials[crystal] = materials.hasOwnProperty(crystal) ? materials[crystal] + stage.crystal_qty : stage.crystal_qty;

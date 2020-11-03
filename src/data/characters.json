@@ -6,7 +6,8 @@
         "specialty": "small_lamp_grass",
         "common": "arrowhead",
         "talent_boss": "dvalins_sigh",
-        "talent_book": "freedom"
+        "talent_book": "freedom",
+        "talents": ["Marksmanship", "Explosive Puppet", "Fiery Rain"]
     },
     "barbara": {
         "name": "Barbara",
@@ -166,7 +167,9 @@
         "type": "flex",
         "weapon": "sword",
         "specialty": "windwheel_aster",
-        "common": "nectar"
+        "common": "nectar",
+        "talent_boss": "dvalins_sigh",
+        "talent_book": ["freedom", "resistance", "ballad"]
     },
     "venti": {
         "name": "Venti",

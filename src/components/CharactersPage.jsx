@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import "./CharactersPage.css";
 
 let characterLevels = [6,5,4,3,2,1]; // reversed order because rotateY done in css due to nature of css selectors
@@ -11,7 +12,7 @@ class CharactersPage extends React.Component {
     super(props);
     this.toggleCharacter = this.toggleCharacter.bind(this);
     this.setCharacterStage = this.setCharacterStage.bind(this);
-    this.state = {elementFilters: [...elementList], weaponFilters: [...weaponList]};
+    this.state = { elementFilters: [...elementList], weaponFilters: [...weaponList] };
   }
 
   toggleCharacter(character) {
@@ -92,19 +93,19 @@ class CharactersPage extends React.Component {
                         characterLevels.map(level => (
                           <React.Fragment key={level}>
                             <input
-                              id={character.name + "" + level}
+                              id={`${character.name}${level}`}
                               type="radio"
                               name={character.name}
                               value={level}
                               disabled={!this.selected(character.name)}
                               checked={this.isLevel(character.name, level)}
                               onChange={(e) => this.setCharacterStage(character.name, level, e)}/>
-                            <label htmlFor={character.name + "" + level}></label>
+                            <label htmlFor={`${character.name}${level}`}></label>
                           </React.Fragment>
                         ))
                       }
                     </div>
-                    <label className="character-name">{character.name}</label>
+                    <NavLink to={`/Characters/${character.name}`} className="character-name">{character.name}</NavLink>
                   </div>
                 ))
             }
