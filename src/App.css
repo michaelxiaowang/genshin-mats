@@ -50,7 +50,7 @@ nav li a:active {
 }
 
 .content {
-  margin: 3.5rem auto;
+  margin: 3.5rem auto 0 auto;
   display: flex;
   flex-direction: column;
   background: #222431;
