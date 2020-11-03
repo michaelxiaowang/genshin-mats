@@ -19,6 +19,7 @@
 }
 
 .filter {
+  display: block;
   cursor: pointer;
   background: none;
   border: none;
@@ -39,6 +40,7 @@
 }
 
 .filter-image {
+  display: block;
   max-width: 2.5rem;
   max-height: 2.5rem;
   padding: 0.25rem;
