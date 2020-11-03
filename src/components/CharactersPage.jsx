@@ -45,7 +45,7 @@ class CharactersPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div className="filters">
           <ul className="element-filters">
             {
@@ -110,7 +110,7 @@ class CharactersPage extends React.Component {
                 ))
             }
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }

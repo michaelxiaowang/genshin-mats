@@ -42,7 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter basename="/">
-        <div>
+        <React.Fragment>
           <nav className="navbar">
             <ul>
               <li><NavLink exact to="/Characters">Characters</NavLink></li>
@@ -75,7 +75,7 @@ class App extends React.Component {
                 materials={Materials}/>
             )}/>
           </div>
-        </div>
+        </React.Fragment>
       </HashRouter>
     );
   }

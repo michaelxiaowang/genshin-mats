@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  max-width: 100vw;
   overflow: auto;
 }
 
@@ -12,9 +11,10 @@ body {
 
 nav {
   background-color: #222431;
+  position: fixed;
+  width: 100%;
   height: 2.5rem;
   color: white;
-  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -49,7 +49,7 @@ nav li a:active {
 }
 
 .content {
-  margin: auto;
+  margin: 3.5rem auto;
   display: flex;
   flex-direction: column;
   background: #222431;
