@@ -16,27 +16,32 @@ class App extends React.Component {
     super(props)
     this.toggleCharacter = this.toggleCharacter.bind(this);
     this.setCharacterStage = this.setCharacterStage.bind(this);
-    this.state = JSON.parse(localStorage.getItem('characters')) || { };
-  }
-
-  toggleCharacter(character) {
-    if (this.state.hasOwnProperty(character)) {
-      if (this.state[character].stage === -1) {
-        this.persistState({[character]: {stage: 0}});
-      } else {
-        this.persistState({[character]: {stage: -1}});
-      }
-    } else {
-      this.persistState({[character]: {stage: 0}});
-    }
-  }
-
-  setCharacterStage(character, stage) {
-    this.persistState({[character]: {stage}}); // e.target.value is supposed to be integer, but somehow casted as string
+    this.state = JSON.parse(localStorage.getItem('state')) || { characters: {}, weapons: {} };
   }
 
   persistState(state) {
-    this.setState(state, () => localStorage.setItem('characters', JSON.stringify(this.state)));
+    this.setState(state, () => localStorage.setItem('state', JSON.stringify(this.state)));
+  }
+
+  toggleCharacter(character) {
+    let characters = this.state.characters;
+    let newObj = {};
+    if (characters.hasOwnProperty(character)) {
+      if (characters[character].stage === -1) {
+        newObj = {[character]: {stage: 0}};
+      } else {
+        newObj = {[character]: {stage: -1}};
+      }
+    } else {
+      newObj = {[character]: {stage: 0}};
+    }
+    characters = Object.assign({}, characters, newObj);
+    this.persistState({characters});
+  }
+
+  setCharacterStage(character, stage) {
+    const characters = Object.assign({}, this.state.characters, {[character]: {stage}});
+    this.persistState({characters});
   }
 
   render() {

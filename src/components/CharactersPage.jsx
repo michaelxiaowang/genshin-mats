@@ -36,11 +36,11 @@ class CharactersPage extends React.Component {
   }
 
   selected(character) {
-    return this.props.state.hasOwnProperty(character) && this.props.state[character].stage !== -1;
+    return this.props.state.characters.hasOwnProperty(character) && this.props.state.characters[character].stage !== -1;
   }
 
   isLevel(character, level) {
-    return this.selected(character) && this.props.state[character]['stage'] === level;
+    return this.selected(character) && this.props.state.characters[character]['stage'] === level;
   }
 
   render() {

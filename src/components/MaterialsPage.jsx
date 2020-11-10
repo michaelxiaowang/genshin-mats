@@ -3,7 +3,7 @@ import "./MaterialsPage.css";
 
 function MaterialsPage(props) {
     let materials = {};
-    Object.entries(props.state)
+    Object.entries(props.state.characters)
         .filter(([key, value]) => value['stage'] !== -1)
         .forEach(([key, value]) => {
             const element = props.characters[key.toLowerCase()].type;
