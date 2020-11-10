@@ -19,24 +19,12 @@
 }
 
 .filter {
-  display: block;
-  cursor: pointer;
-  background: none;
-  border: none;
   border-radius: 0.25rem;
-}
-
-.filter:hover {
-  background: #36384a;
 }
 
 .filter.active img,
 .filter:hover img {
   opacity: 1;
-}
-
-.filter:focus {
-  outline: none;
 }
 
 .filter-image {

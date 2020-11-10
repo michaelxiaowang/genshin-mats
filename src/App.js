@@ -61,10 +61,9 @@ class App extends React.Component {
                 toggleCharacter = {this.toggleCharacter}
                 setCharacterStage = {this.setCharacterStage}/>
             )}/>
-            <Route path="/Characters/:character" render={(props) => (
+            <Route path="/characters/:character" render={(props) => (
               <CharacterInfo
-                {...props}
-                characters={Characters}/>
+                character={Characters[props.match.params.character]}/>
             )}/>
             <Route path="/Weapons" component={WeaponsPage}></Route>
             <Route path="/Materials" render={() => (

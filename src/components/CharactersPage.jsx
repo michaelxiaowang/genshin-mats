@@ -105,7 +105,7 @@ class CharactersPage extends React.Component {
                         ))
                       }
                     </div>
-                    <NavLink to={`/Characters/${character.name}`} className="character-name">{character.name}</NavLink>
+                    <NavLink to={`/characters/${character.name.toLowerCase()}`} className="character-name">{character.name}</NavLink>
                   </div>
                 ))
             }

@@ -18,6 +18,10 @@ nav {
   z-index: 1;
 }
 
+nav * {
+  overflow: hidden;
+}
+
 nav ul {
   margin: auto;
   padding-left: 2rem;
@@ -47,6 +51,21 @@ nav li a:active {
   opacity: 1;
   border-bottom: 0.25rem solid#42a5f5;
   box-sizing: border-box;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  background: #36384a;
+}
+
+button:focus {
+  outline: none;
 }
 
 .content {

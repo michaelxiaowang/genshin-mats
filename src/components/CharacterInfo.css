@@ -1,0 +1,33 @@
+.character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-icon.info {
+    width: 106px;
+    height: 106px;
+}
+
+.character-name.info {
+    margin: 0 0 0.5rem 0;
+    color: white;
+}
+
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.talent-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talent {
+    color: white;
+}
