@@ -72,7 +72,7 @@ class CharactersPage extends React.Component {
                     }
                     <StarLevel
                       name={key}
-                      level={this.props.getLevel(key)}
+                      level={this.props.getCharacterStage(key)}
                       disabled={!this.props.selected(key)}
                       setStage={this.props.setCharacterStage}
                     />
