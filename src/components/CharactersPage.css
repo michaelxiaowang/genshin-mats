@@ -85,32 +85,3 @@ img.inactive {
 .character-name:hover {
   color: white;
 }
-
-.star-level {
-  transform: rotateY(180deg);
-}
-
-.star-level input {
-  display: none;
-}
-
-.star-level label {
-  display: inline-block;
-  cursor: pointer;
-  width: 0.8rem;
-  margin-right: 0.1rem;
-}
-
-.star-level label:after {
-  display: inline-block;
-  content: "";
-  width: 0.8rem;
-  height: 0.8rem;
-  background: url('star.png') no-repeat 0 0;
-  background-size: 100%;
-  opacity: 0.45;
-}
-
-.star-level input:checked ~ label:after {
-  opacity: 0.9;
-}

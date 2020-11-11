@@ -14,8 +14,6 @@ class App extends React.Component {
 
   constructor(props) {
     super(props)
-    this.toggleCharacter = this.toggleCharacter.bind(this);
-    this.setCharacterStage = this.setCharacterStage.bind(this);
     this.state = JSON.parse(localStorage.getItem('state')) || { characters: {}, weapons: {} };
   }
 
@@ -23,7 +21,7 @@ class App extends React.Component {
     this.setState(state, () => localStorage.setItem('state', JSON.stringify(this.state)));
   }
 
-  toggleCharacter(character) {
+  toggleCharacter = (character) => {
     let characters = this.state.characters;
     let newObj = {};
     if (characters.hasOwnProperty(character)) {
@@ -39,9 +37,17 @@ class App extends React.Component {
     this.persistState({characters});
   }
 
-  setCharacterStage(character, stage) {
+  setCharacterStage = (character, stage) => {
     const characters = Object.assign({}, this.state.characters, {[character]: {stage}});
     this.persistState({characters});
+  }
+
+  isCharacterSelected = (character) => {
+    return this.state.characters.hasOwnProperty(character) && this.state.characters[character].stage !== -1;
+  }
+
+  getCharacterLevel = (character) => {
+    return this.isCharacterSelected(character) ? this.state.characters[character].stage : -1;
   }
 
   render() {
@@ -61,14 +67,19 @@ class App extends React.Component {
             </Route>
             <Route exact path="/Characters" render={() => (
               <CharactersPage
-                state={this.state}
                 characters={Characters}
+                selected={this.isCharacterSelected}
+                getLevel={this.getCharacterLevel}
                 toggleCharacter = {this.toggleCharacter}
                 setCharacterStage = {this.setCharacterStage}/>
             )}/>
             <Route path="/characters/:character" render={(props) => (
               <CharacterInfo
-                character={Characters[props.match.params.character]}/>
+                character={Characters[props.match.params.character]}
+                selected={this.isCharacterSelected}
+                level={this.getCharacterLevel(props.match.params.character)}
+                toggleCharacter = {this.toggleCharacter}
+                setCharacterStage = {this.setCharacterStage}/>
             )}/>
             <Route path="/Weapons" component={WeaponsPage}></Route>
             <Route path="/Materials" render={() => (

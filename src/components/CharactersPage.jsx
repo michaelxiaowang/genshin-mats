@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import StarLevel from './StarLevel';
 import "./CharactersPage.css";
 
-let characterLevels = [6,5,4,3,2,1]; // reversed order because rotateY done in css due to nature of css selectors
 let elementList = ['anemo', 'cryo', 'electro', 'dendro', 'geo', 'hydro', 'pyro'];
 let weaponList = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
 
@@ -10,17 +10,7 @@ class CharactersPage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.toggleCharacter = this.toggleCharacter.bind(this);
-    this.setCharacterStage = this.setCharacterStage.bind(this);
     this.state = { elementFilters: [...elementList], weaponFilters: [...weaponList] };
-  }
-
-  toggleCharacter(character) {
-    this.props.toggleCharacter(character);
-  }
-
-  setCharacterStage(character, stage) {
-    this.props.setCharacterStage(character, stage);
   }
 
   toggleElement(element) {
@@ -33,14 +23,6 @@ class CharactersPage extends React.Component {
     let weaponFilters = this.state.weaponFilters;
     weaponFilters = weaponFilters.includes(weapon) ? weaponFilters.filter(item => item !== weapon) : [weapon, ...weaponFilters];
     this.setState({weaponFilters});
-  }
-
-  selected(character) {
-    return this.props.state.characters.hasOwnProperty(character) && this.props.state.characters[character].stage !== -1;
-  }
-
-  isLevel(character, level) {
-    return this.selected(character) && this.props.state.characters[character]['stage'] === level;
   }
 
   render() {
@@ -72,40 +54,29 @@ class CharactersPage extends React.Component {
         </div>
         <div className="character-list">
             {
-              Object.values(this.props.characters)
-                .filter(character => ['flex', ...this.state.elementFilters].includes(character.type) && this.state.weaponFilters.includes(character.weapon))
-                .map(character => (
-                  <div key={character.name} className="character-portrait">
+              Object.entries(this.props.characters)
+                .filter(([key, value]) => ['flex', ...this.state.elementFilters].includes(value.type) && this.state.weaponFilters.includes(value.weapon))
+                .map(([key, value]) => (
+                  <div key={key} className="character-portrait">
                     <img
-                      className={"character-icon " + (this.selected(character.name) ? '' : 'inactive')}
-                      src={process.env.PUBLIC_URL + '/images/characters/' + character.name + '.png'}
-                      alt={character.name}
-                      onClick={(e) => this.toggleCharacter(character.name, e)}/>
+                      className={"character-icon " + (this.props.selected(key) ? '' : 'inactive')}
+                      src={process.env.PUBLIC_URL + '/images/characters/' + value.name + '.png'}
+                      alt={value.name}
+                      onClick={(e) => this.props.toggleCharacter(key, e)}/>
                     {
-                      character.name !== 'Traveler' &&
+                      key !== 'traveler' &&
                       <img
-                        className={"character-type " + (this.selected(character.name) ? '' : 'inactive')}
-                        src={process.env.PUBLIC_URL + '/images/' + character.type + '.png'}
-                        alt={character.type}/>
+                        className={"character-type " + (this.props.selected(key) ? '' : 'inactive')}
+                        src={process.env.PUBLIC_URL + '/images/' + value.type + '.png'}
+                        alt={value.type}/>
                     }
-                    <div className="star-level">
-                      {
-                        characterLevels.map(level => (
-                          <React.Fragment key={level}>
-                            <input
-                              id={`${character.name}${level}`}
-                              type="radio"
-                              name={character.name}
-                              value={level}
-                              disabled={!this.selected(character.name)}
-                              checked={this.isLevel(character.name, level)}
-                              onChange={(e) => this.setCharacterStage(character.name, level, e)}/>
-                            <label htmlFor={`${character.name}${level}`}></label>
-                          </React.Fragment>
-                        ))
-                      }
-                    </div>
-                    <NavLink to={`/characters/${character.name.toLowerCase()}`} className="character-name">{character.name}</NavLink>
+                    <StarLevel
+                      name={key}
+                      level={this.props.getLevel(key)}
+                      disabled={!this.props.selected(key)}
+                      setStage={this.props.setCharacterStage}
+                    />
+                    <NavLink to={`/characters/${key}`} className="character-name">{value.name}</NavLink>
                   </div>
                 ))
             }
