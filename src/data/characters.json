@@ -16,7 +16,8 @@
         "specialty": "philanemo_mushroom",
         "common": "scroll",
         "talent_boss": "ring_of_boreas",
-        "talent_book": "freedom"
+        "talent_book": "freedom",
+        "talents": ["Whisper of Water", "Let the Show Begin", "Shining Miracle"]
     },
     "beidou": {
         "name": "Beidou",
@@ -25,7 +26,8 @@
         "specialty": "noctilucous_jade",
         "common": "treasure_insignia",
         "talent_boss": "dvalins_sigh",
-        "talent_book": "gold"
+        "talent_book": "gold",
+        "talents": ["Oceanborne", "Tidecaller", "Stormbreaker"]
     },
     "bennett": {
         "name": "Bennett",
@@ -34,7 +36,8 @@
         "specialty": "windwheel_aster",
         "common": "treasure_insignia",
         "talent_boss": "dvalins_plume",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Strike of Fortune", "Passion Overload", "Fantastic Voyage"]
     },
     "chongyun": {
         "name": "Chongyun",
@@ -43,7 +46,8 @@
         "specialty": "cor_lapis",
         "common": "mask",
         "talent_boss": "dvalins_sigh",
-        "talent_book": "diligence"
+        "talent_book": "diligence",
+        "talents": ["Demonbane", "Spirit Blade - Chonghua's Layered Frost", "Spirit Blade - Cloud-parting Star"]
     },
     "diluc": {
         "name": "Diluc",
@@ -52,7 +56,8 @@
         "specialty": "small_lamp_grass",
         "common": "fatui_insignia",
         "talent_boss": "dvalins_plume",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Tempered Sword", "Searing Onslaught", "Dawn"]
     },
     "fischl": {
         "name": "Fischl",
@@ -61,7 +66,8 @@
         "specialty": "small_lamp_grass",
         "common": "arrowhead",
         "talent_boss": "spirit_locket_of_boreas",
-        "talent_book": "ballad"
+        "talent_book": "ballad",
+        "talents": ["Bolts of Downfall", "Nightrider", "Midnight Phantasmagoria"]
     },
     "jean": {
         "name": "Jean",
@@ -70,7 +76,8 @@
         "specialty": "dandelion_seed",
         "common": "mask",
         "talent_boss": "dvalins_plume",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Favonius Bladework", "Gale Blade", "Dandelion Breeze"]
     },
     "kaeya": {
         "name": "Kaeya",
@@ -79,7 +86,8 @@
         "specialty": "calla_lily",
         "common": "treasure_insignia",
         "talent_boss": "spirit_locket_of_boreas",
-        "talent_book": "ballad"
+        "talent_book": "ballad",
+        "talents": ["Ceremonial Bladework", "Frostgnaw", "Glacial Waltz"]
     },
     "keqing": {
         "name": "Keqing",
@@ -88,7 +96,8 @@
         "specialty": "cor_lapis",
         "common": "nectar",
         "talent_boss": "ring_of_boreas",
-        "talent_book": "prosperity"
+        "talent_book": "prosperity",
+        "talents": ["Yunlai Swordsmanship", "Stellar Restoration", "Starward Sword"]
     },
     "klee": {
         "name": "Klee",
@@ -97,7 +106,8 @@
         "specialty": "philanemo_mushroom",
         "common": "scroll",
         "talent_boss": "ring_of_boreas",
-        "talent_book": "freedom"
+        "talent_book": "freedom",
+        "talents": ["Kaboom!", "Jumpy Dumpty", "Sparks 'n' Splash"]
     },
     "lisa": {
         "name": "Lisa",
@@ -106,7 +116,8 @@
         "specialty": "valberry",
         "common": "scroll",
         "talent_boss": "dvalins_claw",
-        "talent_book": "ballad"
+        "talent_book": "ballad",
+        "talents": ["Lightning Touch", "Violet Arc", "Lightning Rose"]
     },
     "mona": {
         "name": "Mona",
@@ -115,7 +126,8 @@
         "specialty": "philanemo_mushroom",
         "common": "nectar",
         "talent_boss": "ring_of_boreas",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Ripple of Fate", "Reflection of Doom", "Stellaris Phantasm"]
     },
     "ningguang": {
         "name": "Ningguang",
@@ -124,7 +136,8 @@
         "specialty": "glaze_lily",
         "common": "fatui_insignia",
         "talent_boss": "spirit_locket_of_boreas",
-        "talent_book": "prosperity"
+        "talent_book": "prosperity",
+        "talents": ["Sparkling Scatter", "Jade Screen", "Starshatter"]
     },
     "noelle": {
         "name": "Noelle",
@@ -133,7 +146,8 @@
         "specialty": "valberry",
         "common": "mask",
         "talent_boss": "dvalins_claw",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Favonius Bladework - Maid", "Breastplate", "Sweeping Time"]
     },
     "qiqi": {
         "name": "Qiqi",
@@ -142,7 +156,8 @@
         "specialty": "violetgrass",
         "common": "scroll",
         "talent_boss": "tail_of_boreas",
-        "talent_book": "prosperity"
+        "talent_book": "prosperity",
+        "talents": ["Ancient Sword Art", "Adeptus Art: Herald of Frost", "Adeptus Art: Preserver of Fortune"]
     },
     "razor": {
         "name": "Razor",
@@ -151,7 +166,8 @@
         "specialty": "wolfhook",
         "common": "mask",
         "talent_boss": "dvalins_claw",
-        "talent_book": "resistance"
+        "talent_book": "resistance",
+        "talents": ["Steel Fang", "Claw and Thunder", "Lightning Fang"]
     },
     "sucrose": {
         "name": "Sucrose",
@@ -160,7 +176,8 @@
         "specialty": "windwheel_aster",
         "common": "nectar",
         "talent_boss": "spirit_locket_of_boreas",
-        "talent_book": "freedom"
+        "talent_book": "freedom",
+        "talents": ["Wind Spirit Creation", "Astable Anemohypostasis Creation - 6308", "Forbidden Creation - Isomer 75 / Type II"]
     },
     "traveler": {
         "name": "Traveler",
@@ -169,7 +186,11 @@
         "specialty": "windwheel_aster",
         "common": "nectar",
         "talent_boss": "dvalins_sigh",
-        "talent_book": ["freedom", "resistance", "ballad"]
+        "talent_book": ["freedom", "resistance", "ballad"],
+        "talents": {
+            "anemo": ["Foreign Ironwind", "Palm Vortex", "Gust Surge"],
+            "geo": ["Foreign Rockblade", "Starfell Sword", "Wake of Earth"]
+        }
     },
     "venti": {
         "name": "Venti",
@@ -178,7 +199,8 @@
         "specialty": "cecilia",
         "common": "slime",
         "talent_boss": "tail_of_boreas",
-        "talent_book": "ballad"
+        "talent_book": "ballad",
+        "talents": ["Divine Marksmanship", "Skyward Sonnet", "Wind's Grand Ode"]
     },
     "xiangling": {
         "name": "Xiangling",
@@ -187,7 +209,8 @@
         "specialty": "jueyun_chili",
         "common": "slime",
         "talent_boss": "dvalins_claw",
-        "talent_book": "diligence"
+        "talent_book": "diligence",
+        "talents": ["Dough-Fu", "Guoba Attack", "Pyronado"]
     },
     "xingqiu": {
         "name": "Xingqiu",
@@ -196,6 +219,7 @@
         "specialty": "silk_flower",
         "common": "mask",
         "talent_boss": "tail_of_boreas",
-        "talent_book": "gold"
+        "talent_book": "gold",
+        "talents": ["Guhua Style", "Guhua Sword - Fatal Rainscreen", "Guhua Sword - Raincutter"]
     }
 }

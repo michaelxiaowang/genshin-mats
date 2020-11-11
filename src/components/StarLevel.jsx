@@ -20,7 +20,7 @@ function StarLevel(props) {
                         disabled={disabled}
                         checked={!disabled && level === currentLevel}
                         onChange={() => props.setStage(name, level)}/>
-                    <label htmlFor={`${name}${level}`}></label>
+                    <label className={disabled ? "inactive" : ""} htmlFor={`${name}${level}`}></label>
                 </React.Fragment>
             ))
             }

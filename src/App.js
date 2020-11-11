@@ -10,14 +10,26 @@ import Materials from './data/materials.json';
 
 import './App.css';
 
+/*
+Initialize character state to stage = -1 (disabled) and all talent levels to 1
+*/
 const DEFAULT_CHARACTER_STATE = Object.entries(Characters).reduce((state, [key, value]) => {
-  
-  // const talents = value.talents.reduce((obj, talent) => {
-  //   Object.assign(obj, {[talent]: 1});
-  // })
-  // Object.assign(state, {[key]: {stage: -1, talents}});
-  return Object.assign(state, {[key]: {stage: -1}});
+  let talents = {};
+  if (key === 'traveler') {
+    Object.entries(value.talents).reduce((obj, [key2, value2]) => {
+      let nestedTalents = value2.reduce((obj2, nestedTalent) => {
+        return Object.assign(obj2, {[nestedTalent]: 1});
+      }, {});
+      return Object.assign(obj, {[key2]: nestedTalents});
+    }, talents);
+  } else {
+    value.talents.map(talent => {
+      return Object.assign(talents, {[talent]: 1});
+    });
+  }
+  return Object.assign(state, {[key]: {stage: -1, talents}});
 }, {});
+
 const DEFAULT_STATE = { characters: DEFAULT_CHARACTER_STATE, weapons: {} };
 
 class App extends React.Component {
@@ -25,6 +37,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = JSON.parse(localStorage.getItem('state')) || DEFAULT_STATE;
+    console.log(this.state);
   }
 
   persistState(state) {
@@ -32,8 +45,8 @@ class App extends React.Component {
   }
 
   /*
-  Set the character to stage 0 (enabled) or -1 disabled
-  Set the character talents to level 1
+  Set the character to stage 0 (enabled) or -1 (disabled)
+  Set the character talents to level 1 (default)
   */
   toggleCharacter = (character) => {
     let characters = this.state.characters;
@@ -44,9 +57,7 @@ class App extends React.Component {
     } else {
       stage = -1;
     }
-    Characters[character].talents.map(talent => {
-      return Object.assign(talents, {[talent]: 1});
-    });
+    Object.assign(talents, DEFAULT_CHARACTER_STATE[character].talents);
     const newObj = Object.assign({}, {[character]: {stage, talents}});
     characters = Object.assign({}, characters, newObj);
     this.persistState({characters});

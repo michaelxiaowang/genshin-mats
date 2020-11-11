@@ -13,6 +13,10 @@
     margin-right: 0.1rem;
 }
 
+.star-level label.inactive {
+    cursor: auto;
+}
+
 .star-level label:after {
     display: inline-block;
     content: "";

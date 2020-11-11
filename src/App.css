@@ -68,6 +68,14 @@ button:focus {
   outline: none;
 }
 
+button:disabled {
+  cursor: auto;
+}
+
+.inactive {
+  opacity: 0.3;
+}
+
 .content {
   margin: 3.5rem auto 0 auto;
   display: flex;

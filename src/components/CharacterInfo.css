@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .character-icon.info {
@@ -13,6 +14,7 @@
 .character-name.info {
     margin: 0 0 0.5rem 0;
     color: white;
+    font-size: 2rem;
 }
 
 .back-button {
@@ -37,18 +39,24 @@
     line-height: 2rem;
 }
 
+.talent-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .talent-control {
     background: #36384a;
     color: white;
     font-size: 1rem;
     align-items: center;
     justify-content: center;
-    height: 2rem;
-    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
     border-radius: 0.25rem;
     margin: 0 1rem;
 }
 
-.talent-control:hover {
+.talent-control:not(:disabled):hover {
     background: #2d2f39;
 }
