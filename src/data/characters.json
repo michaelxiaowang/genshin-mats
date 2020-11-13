@@ -184,7 +184,8 @@
         "type": "flex",
         "weapon": "sword",
         "specialty": "windwheel_aster",
-        "common": "nectar",
+        "common": "mask",
+        "talent_common": "scroll",
         "talent_boss": "dvalins_sigh",
         "talent_book": ["freedom", "resistance", "ballad"],
         "talents": {

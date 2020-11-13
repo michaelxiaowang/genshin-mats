@@ -129,18 +129,18 @@
             "level": 9,
             "talent_boss_qty": 1,
             "talent_book_stg": 3,
-            "talent_book_qty": 12,
+            "talent_book_qty": 9,
             "common_stg": 3,
-            "common_qty": 9,
+            "common_qty": 15,
             "mora": 450000
         },
         {
             "level": 10,
             "talent_boss_qty": 2,
             "talent_book_stg": 3,
-            "talent_book_qty": 16,
+            "talent_book_qty": 12,
             "common_stg": 3,
-            "common_qty": 12,
+            "common_qty": 20,
             "mora": 700000
         }
     ]

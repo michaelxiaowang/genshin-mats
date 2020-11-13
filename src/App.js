@@ -78,7 +78,7 @@ class App extends React.Component {
   }
 
   setTalentLevel = (character, talent, level) => {
-    if (level < 1 || level > 8) {
+    if (level < 1 || level > 10) {
       return;
     }
     let currentCharacter = this.state.characters[character];

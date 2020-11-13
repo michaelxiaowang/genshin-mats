@@ -135,130 +135,130 @@
     "name": "Everflame Seed",
     "type": "elemental"
   },
-  "boreas_1": {
+  "tail_of_boreas": {
     "name": "Tail of Boreas",
     "type": "talent_boss"
   },
-  "boreas_2": {
+  "ring_of_boreas": {
     "name": "Ring of Boreas",
     "type": "talent_boss"
   },
-  "boreas_3": {
+  "spirit_locket_of_boreas": {
     "name": "Spirit Locket of Boreas",
     "type": "talent_boss"
   },
-  "dvalin_1": {
+  "dvalins_plume": {
     "name": "Dvalin's Plume",
     "type": "talent_boss"
   },
-  "dvalin_2": {
+  "dvalins_claw": {
     "name": "Dvalin's Claw",
     "type": "talent_boss"
   },
-  "dvalin_3": {
+  "dvalins_sigh": {
     "name": "Dvalin's Sigh",
     "type": "talent_boss"
   },
-  "childe_1": {
+  "tusk_of_monoceros_caeli": {
     "name": "Tusk of Monoceros Caeli",
     "type": "talent_boss"
   },
-  "childe_2": {
+  "shard_of_a_foul_legacy": {
     "name": "Shard of a Foul Legacy",
     "type": "talent_boss"
   },
-  "childe_3": {
+  "shadow_of_the_warrior": {
     "name": "Shadow of the Warrior",
     "type": "talent_boss"
   },
   "freedom_1": {
     "name": "Teachings of \"Freedom\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 1
   },
   "freedom_2": {
-    "name": "Guide of \"Freedom\"",
-    "type": "talent",
+    "name": "Guide to \"Freedom\"",
+    "type": "talent_book",
     "day_group": 1
   },
   "freedom_3": {
     "name": "Philosophies of \"Freedom\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 1
   },
   "resistance_1": {
     "name": "Teachings of \"Resistance\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 2
   },
   "resistance_2": {
-    "name": "Guide of \"Resistance\"",
-    "type": "talent",
+    "name": "Guide to \"Resistance\"",
+    "type": "talent_book",
     "day_group": 2
   },
   "resistance_3": {
     "name": "Philosophies of \"Resistance\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 2
   },
   "ballad_1": {
     "name": "Teachings of \"Ballad\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 3
   },
   "ballad_2": {
-    "name": "Guide of \"Ballad\"",
-    "type": "talent",
+    "name": "Guide to \"Ballad\"",
+    "type": "talent_book",
     "day_group": 3
   },
   "ballad_3": {
     "name": "Philosophies of \"Ballad\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 3
   },
   "prosperity_1": {
     "name": "Teachings of \"Prosperity\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 1
   },
   "prosperity_2": {
-    "name": "Guide of \"Prosperity\"",
-    "type": "talent",
+    "name": "Guide to \"Prosperity\"",
+    "type": "talent_book",
     "day_group": 1
   },
   "prosperity_3": {
     "name": "Philosophies of \"Prosperity\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 1
   },
   "diligence_1": {
     "name": "Teachings of \"Diligence\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 2
   },
   "diligence_2": {
-    "name": "Guide of \"Diligence\"",
-    "type": "talent",
+    "name": "Guide to \"Diligence\"",
+    "type": "talent_book",
     "day_group": 2
   },
   "diligence_3": {
     "name": "Philosophies of \"Diligence\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 2
   },
   "gold_1": {
     "name": "Teachings of \"Gold\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 3
   },
   "gold_2": {
-    "name": "Guide of \"Gold\"",
-    "type": "talent",
+    "name": "Guide to \"Gold\"",
+    "type": "talent_book",
     "day_group": 3
   },
   "gold_3": {
     "name": "Philosophies of \"Gold\"",
-    "type": "talent",
+    "type": "talent_book",
     "day_group": 3
   },
   "decarabian_1": {
@@ -600,5 +600,9 @@
   "nectar_3": {
     "name": "Energy Nectar",
     "type": "common"
+  },
+  "mora": {
+    "name": "Mora",
+    "type": "money"
   }
 }
