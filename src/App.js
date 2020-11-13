@@ -35,13 +35,18 @@ const DEFAULT_CHARACTER_STATE = Object.entries(Characters).reduce((state, [key, 
   return Object.assign(state, {[key]: character});
 }, {});
 
-const DEFAULT_STATE = { characters: DEFAULT_CHARACTER_STATE, weapons: {} };
+const DEFAULT_WEAPON_STATE = {}
+
+const DEFAULT_STATE = { characters: DEFAULT_CHARACTER_STATE, weapons: DEFAULT_WEAPON_STATE };
 
 class App extends React.Component {
   
   constructor(props) {
     super(props)
-    this.state = JSON.parse(localStorage.getItem('state')) || DEFAULT_STATE;
+    const savedState = JSON.parse(localStorage.getItem('state')) || DEFAULT_STATE;
+    const savedCharacters = Object.assign({}, DEFAULT_CHARACTER_STATE, {...savedState.characters});
+    const savedWeapons = Object.assign({}, DEFAULT_WEAPON_STATE, {...savedState.weapons});
+    this.state = Object.assign({}, DEFAULT_STATE, {characters: {...savedCharacters}, weapons: {...savedWeapons}});
   }
 
   persistState(state) {

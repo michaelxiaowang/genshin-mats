@@ -37,9 +37,9 @@ function CharacterInfo(props) {
               <img
                 className={"character-type"}
                 src={process.env.PUBLIC_URL + '/images/' + element + '.png'}
-                alt={element}/>
+                alt={element} />
             }
-          </div>         
+          </div>
           <StarLevel
             name={characterKey}
             level={props.stage}

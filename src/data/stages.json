@@ -1,147 +1,147 @@
 {
-    "characters": [
-        {
-            "stage": 1,
-            "crystal_stg": 1,
-            "crystal_qty": 1,
-            "elemental_qty": 0,
-            "specialty_qty": 3,
-            "common_stg": 1,
-            "common_qty": 3,
-            "mora": 20000
-        },
-        {
-            "stage": 2,
-            "crystal_stg": 2,
-            "crystal_qty": 3,
-            "elemental_qty": 2,
-            "specialty_qty": 10,
-            "common_stg": 1,
-            "common_qty": 15,
-            "mora": 40000
-        },
-        {
-            "stage": 3,
-            "crystal_stg": 2,
-            "crystal_qty": 6,
-            "elemental_qty": 4,
-            "specialty_qty": 20,
-            "common_stg": 2,
-            "common_qty": 12,
-            "mora": 60000
-        },
-        {
-            "stage": 4,
-            "crystal_stg": 3,
-            "crystal_qty": 3,
-            "elemental_qty": 8,
-            "specialty_qty": 30,
-            "common_stg": 2,
-            "common_qty": 18,
-            "mora": 80000
-        },
-        {
-            "stage": 5,
-            "crystal_stg": 3,
-            "crystal_qty": 6,
-            "elemental_qty": 12,
-            "specialty_qty": 45,
-            "common_stg": 3,
-            "common_qty": 12,
-            "mora": 100000
-        },
-        {
-            "stage": 6,
-            "crystal_stg": 4,
-            "crystal_qty": 6,
-            "elemental_qty": 20,
-            "specialty_qty": 60,
-            "common_stg": 3,
-            "common_qty": 24,
-            "mora": 120000
-        }
-    ],
-    "talents": [
-        {
-            "level": 2,
-            "talent_boss_qty": 0,
-            "talent_book_stg": 1,
-            "talent_book_qty": 3,
-            "common_stg": 1,
-            "common_qty": 6,
-            "mora": 12500
-        },
-        {
-            "level": 3,
-            "talent_boss_qty": 0,
-            "talent_book_stg": 2,
-            "talent_book_qty": 2,
-            "common_stg": 2,
-            "common_qty": 3,
-            "mora": 17500
-        },
-        {
-            "level": 4,
-            "talent_boss_qty": 0,
-            "talent_book_stg": 2,
-            "talent_book_qty": 4,
-            "common_stg": 2,
-            "common_qty": 4,
-            "mora": 25000
-        },
-        {
-            "level": 5,
-            "talent_boss_qty": 0,
-            "talent_book_stg": 2,
-            "talent_book_qty": 6,
-            "common_stg": 2,
-            "common_qty": 6,
-            "mora": 30000
-        },
-        {
-            "level": 6,
-            "talent_boss_qty": 0,
-            "talent_book_stg": 2,
-            "talent_book_qty": 9,
-            "common_stg": 2,
-            "common_qty": 9,
-            "mora": 37500
-        },
-        {
-            "level": 7,
-            "talent_boss_qty": 1,
-            "talent_book_stg": 3,
-            "talent_book_qty": 4,
-            "common_stg": 3,
-            "common_qty": 4,
-            "mora": 120000
-        },
-        {
-            "level": 8,
-            "talent_boss_qty": 1,
-            "talent_book_stg": 3,
-            "talent_book_qty": 6,
-            "common_stg": 3,
-            "common_qty": 6,
-            "mora": 260000
-        },
-        {
-            "level": 9,
-            "talent_boss_qty": 1,
-            "talent_book_stg": 3,
-            "talent_book_qty": 9,
-            "common_stg": 3,
-            "common_qty": 15,
-            "mora": 450000
-        },
-        {
-            "level": 10,
-            "talent_boss_qty": 2,
-            "talent_book_stg": 3,
-            "talent_book_qty": 12,
-            "common_stg": 3,
-            "common_qty": 20,
-            "mora": 700000
-        }
-    ]
+  "characters": [
+    {
+      "stage": 1,
+      "crystal_stg": 1,
+      "crystal_qty": 1,
+      "elemental_qty": 0,
+      "specialty_qty": 3,
+      "common_stg": 1,
+      "common_qty": 3,
+      "mora": 20000
+    },
+    {
+      "stage": 2,
+      "crystal_stg": 2,
+      "crystal_qty": 3,
+      "elemental_qty": 2,
+      "specialty_qty": 10,
+      "common_stg": 1,
+      "common_qty": 15,
+      "mora": 40000
+    },
+    {
+      "stage": 3,
+      "crystal_stg": 2,
+      "crystal_qty": 6,
+      "elemental_qty": 4,
+      "specialty_qty": 20,
+      "common_stg": 2,
+      "common_qty": 12,
+      "mora": 60000
+    },
+    {
+      "stage": 4,
+      "crystal_stg": 3,
+      "crystal_qty": 3,
+      "elemental_qty": 8,
+      "specialty_qty": 30,
+      "common_stg": 2,
+      "common_qty": 18,
+      "mora": 80000
+    },
+    {
+      "stage": 5,
+      "crystal_stg": 3,
+      "crystal_qty": 6,
+      "elemental_qty": 12,
+      "specialty_qty": 45,
+      "common_stg": 3,
+      "common_qty": 12,
+      "mora": 100000
+    },
+    {
+      "stage": 6,
+      "crystal_stg": 4,
+      "crystal_qty": 6,
+      "elemental_qty": 20,
+      "specialty_qty": 60,
+      "common_stg": 3,
+      "common_qty": 24,
+      "mora": 120000
+    }
+  ],
+  "talents": [
+    {
+      "level": 2,
+      "talent_boss_qty": 0,
+      "talent_book_stg": 1,
+      "talent_book_qty": 3,
+      "common_stg": 1,
+      "common_qty": 6,
+      "mora": 12500
+    },
+    {
+      "level": 3,
+      "talent_boss_qty": 0,
+      "talent_book_stg": 2,
+      "talent_book_qty": 2,
+      "common_stg": 2,
+      "common_qty": 3,
+      "mora": 17500
+    },
+    {
+      "level": 4,
+      "talent_boss_qty": 0,
+      "talent_book_stg": 2,
+      "talent_book_qty": 4,
+      "common_stg": 2,
+      "common_qty": 4,
+      "mora": 25000
+    },
+    {
+      "level": 5,
+      "talent_boss_qty": 0,
+      "talent_book_stg": 2,
+      "talent_book_qty": 6,
+      "common_stg": 2,
+      "common_qty": 6,
+      "mora": 30000
+    },
+    {
+      "level": 6,
+      "talent_boss_qty": 0,
+      "talent_book_stg": 2,
+      "talent_book_qty": 9,
+      "common_stg": 2,
+      "common_qty": 9,
+      "mora": 37500
+    },
+    {
+      "level": 7,
+      "talent_boss_qty": 1,
+      "talent_book_stg": 3,
+      "talent_book_qty": 4,
+      "common_stg": 3,
+      "common_qty": 4,
+      "mora": 120000
+    },
+    {
+      "level": 8,
+      "talent_boss_qty": 1,
+      "talent_book_stg": 3,
+      "talent_book_qty": 6,
+      "common_stg": 3,
+      "common_qty": 6,
+      "mora": 260000
+    },
+    {
+      "level": 9,
+      "talent_boss_qty": 1,
+      "talent_book_stg": 3,
+      "talent_book_qty": 9,
+      "common_stg": 3,
+      "common_qty": 15,
+      "mora": 450000
+    },
+    {
+      "level": 10,
+      "talent_boss_qty": 2,
+      "talent_book_stg": 3,
+      "talent_book_qty": 12,
+      "common_stg": 3,
+      "common_qty": 20,
+      "mora": 700000
+    }
+  ]
 }

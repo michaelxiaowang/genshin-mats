@@ -27,13 +27,13 @@ function MaterialsPage(props) {
       let talents = {};
       if (character === 'traveler') {
         Object.values(value.talents).reduce((allTalents, elementalTalents) => {
-          return Object.assign(allTalents, {...elementalTalents});
+          return Object.assign(allTalents, { ...elementalTalents });
         }, talents);
       } else {
         talents = value.talents;
       }
       Object.entries(talents).forEach(([talent, level]) => {
-        for(let i = level - 1; i < 9; i++) {
+        for (let i = level - 1; i < 9; i++) {
           const requirements = props.stages.talents[i];
           const talent_boss_qty = requirements.talent_boss_qty;
           const talent_book_stg = requirements.talent_book_stg;
