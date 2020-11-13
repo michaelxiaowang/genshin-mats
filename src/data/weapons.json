@@ -1,3 +1,82 @@
 {
-    
+  "amos_bow": {
+    "name": "Amos' Bow",
+    "type": "bow",
+    "rarity": 5,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "slime"
+  },
+  "compound_bow": {
+    "name": "Compound Bow",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "fatui_insignia"
+  },
+  "lost_prayer_to_the_sacred_winds": {
+    "name": "Lost Prayer to the Sacred Winds",
+    "type": "catalyst",
+    "rarity": 5,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "slime"
+  },
+  "favonius_codex": {
+    "name": "Favonius Codex",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "scroll"
+  },
+  "skyward_pride": {
+    "name": "Skyward Pride",
+    "type": "claymore",
+    "rarity": 5,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "slime"
+  },
+  "sacrificial_greatsword": {
+    "name": "Sacrificial Greatsword",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "arrowhead"
+  },
+  "primordial_jade_winged_spear": {
+    "name": "Primordial Jade Winged-Spear",
+    "type": "polearm",
+    "rarity": 5,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "fatui_insigia"
+  },
+  "crescent_pike": {
+    "name": "Crescent Pike",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "treasure_insignia"
+  },
+  "skyward_blade": {
+    "name": "Skyward Blade",
+    "type": "sword",
+    "rarity": 5,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "slime"
+  },
+  "favonius_sword": {
+    "name": "Favonius Sword",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "arrowhead"
+  }
 }

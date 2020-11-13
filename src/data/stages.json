@@ -143,5 +143,119 @@
       "common_qty": 20,
       "mora": 700000
     }
-  ]
+  ],
+  "weapons": {
+    "5": [
+      {
+        "stage": 1,
+        "weapon_stg": 1,
+        "weapon_qty": 5,
+        "common_stg": 1,
+        "common_qty_1": 5,
+        "common_qty_2": 3,
+        "mora": 10000
+      },
+      {
+        "stage": 2,
+        "weapon_stg": 2,
+        "weapon_qty": 5,
+        "common_stg": 1,
+        "common_qty_1": 18,
+        "common_qty_2": 12,
+        "mora": 20000
+      },
+      {
+        "stage": 3,
+        "weapon_stg": 2,
+        "weapon_qty": 9,
+        "common_stg": 2,
+        "common_qty_1": 9,
+        "common_qty_2": 9,
+        "mora": 30000
+      },
+      {
+        "stage": 4,
+        "weapon_stg": 3,
+        "weapon_qty": 5,
+        "common_stg": 2,
+        "common_qty_1": 18,
+        "common_qty_2": 14,
+        "mora": 45000
+      },
+      {
+        "stage": 5,
+        "weapon_stg": 3,
+        "weapon_qty": 9,
+        "common_stg": 3,
+        "common_qty_1": 14,
+        "common_qty_2": 9,
+        "mora": 55000
+      },
+      {
+        "stage": 6,
+        "weapon_stg": 4,
+        "weapon_qty": 6,
+        "common_stg": 3,
+        "common_qty_1": 27,
+        "common_qty_2": 18,
+        "mora": 65000
+      }
+    ],
+    "4": [
+      {
+        "stage": 1,
+        "weapon_stg": 1,
+        "weapon_qty": 3,
+        "common_stg": 1,
+        "common_qty_1": 3,
+        "common_qty_2": 2,
+        "mora": 5000
+      },
+      {
+        "stage": 2,
+        "weapon_stg": 2,
+        "weapon_qty": 3,
+        "common_stg": 1,
+        "common_qty_1": 12,
+        "common_qty_2": 8,
+        "mora": 15000
+      },
+      {
+        "stage": 3,
+        "weapon_stg": 2,
+        "weapon_qty": 6,
+        "common_stg": 2,
+        "common_qty_1": 6,
+        "common_qty_2": 6,
+        "mora": 20000
+      },
+      {
+        "stage": 4,
+        "weapon_stg": 3,
+        "weapon_qty": 3,
+        "common_stg": 2,
+        "common_qty_1": 12,
+        "common_qty_2": 9,
+        "mora": 30000
+      },
+      {
+        "stage": 5,
+        "weapon_stg": 3,
+        "weapon_qty": 6,
+        "common_stg": 3,
+        "common_qty_1": 9,
+        "common_qty_2": 6,
+        "mora": 35000
+      },
+      {
+        "stage": 6,
+        "weapon_stg": 4,
+        "weapon_qty": 4,
+        "common_stg": 3,
+        "common_qty_1": 18,
+        "common_qty_2": 12,
+        "mora": 45000
+      }
+    ]
+  }
 }
