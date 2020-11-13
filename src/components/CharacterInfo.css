@@ -1,62 +1,118 @@
-.character-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.character-icon.info {
-    width: 106px;
-    height: 106px;
-}
-
-.character-name.info {
-    margin: 0 0 0.5rem 0;
-    color: white;
-    font-size: 2rem;
-}
-
 .back-button {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    margin-left: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.character-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.character-info * {
+  color: white;
+}
+
+.character-info.inactive > * {
+  color: white;
+  opacity: 0.3;
+}
+
+.character-info-grp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-info-grp > * {
+  margin-bottom: 1rem;
+}
+
+.character-card {
+  position: relative;
+}
+
+.element-list {
+  background: #2d2f39;
+}
+
+.element-list:active,
+.element-list:focus {
+  outline: none;
+}
+
+.character-info .character-icon {
+  width: 7rem;
+  height: 7rem;
+  margin: 0;
+}
+
+.character-info .character-type {
+  width: 2rem;
+  height: 2rem;
+}
+
+.element-list {
+  width: 106px;
+}
+
+.talent-title {
+  margin-bottom: 1rem;
 }
 
 .talent-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .talent {
-    color: white;
-    display: flex;
-    width: 20rem;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-    line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.talent-label {
+  display: flex;
+  align-items: center;
 }
 
 .talent-name {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
 }
 
 .talent-control {
-    background: #36384a;
-    color: white;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    min-height: 2rem;
-    min-width: 2rem;
-    border-radius: 0.25rem;
-    margin: 0 1rem;
+  background: #36384a;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  min-width: 2rem;
+  border-radius: 0.25rem;
+}
+
+.talent-level {
+  margin: 0 1rem;
 }
 
 .talent-control:not(:disabled):hover {
-    background: #2d2f39;
+  background: #2d2f39;
+}
+
+.character-info .star-level label {
+  margin-right: 0.15rem;
+  width: 1rem;
+}
+
+.character-info .star-level label:after {
+  width: 1rem;
+  height: 1rem;
 }

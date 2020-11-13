@@ -57,6 +57,10 @@
   margin: 0.5rem;
 }
 
+.character-portrait .inactive {
+  opacity: 0.3;
+}
+
 .character-icon {
   background: #36384a;
   border-radius: 0.25rem;

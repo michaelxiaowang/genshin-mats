@@ -14,8 +14,9 @@ import './App.css';
 Initialize character state to stage = -1 (disabled) and all talent levels to 1
 */
 const DEFAULT_CHARACTER_STATE = Object.entries(Characters).reduce((state, [key, value]) => {
+  const traveler = key === 'traveler';
   let talents = {};
-  if (key === 'traveler') {
+  if (traveler) {
     Object.entries(value.talents).reduce((obj, [key2, value2]) => {
       let nestedTalents = value2.reduce((obj2, nestedTalent) => {
         return Object.assign(obj2, {[nestedTalent]: 1});
@@ -27,17 +28,20 @@ const DEFAULT_CHARACTER_STATE = Object.entries(Characters).reduce((state, [key, 
       return Object.assign(talents, {[talent]: 1});
     });
   }
-  return Object.assign(state, {[key]: {stage: -1, talents}});
+  let character = {stage: -1, talents};
+  if (traveler) {
+    character.element = 'anemo';
+  }
+  return Object.assign(state, {[key]: character});
 }, {});
 
 const DEFAULT_STATE = { characters: DEFAULT_CHARACTER_STATE, weapons: {} };
 
 class App extends React.Component {
-
+  
   constructor(props) {
     super(props)
     this.state = JSON.parse(localStorage.getItem('state')) || DEFAULT_STATE;
-    console.log(this.state);
   }
 
   persistState(state) {
@@ -45,21 +49,15 @@ class App extends React.Component {
   }
 
   /*
-  Set the character to stage 0 (enabled) or -1 (disabled)
-  Set the character talents to level 1 (default)
+  Set the character state back to default
+  Toggle the character between stage 0 (enabled) or -1 (disabled)
   */
   toggleCharacter = (character) => {
     let characters = this.state.characters;
-    let stage = 0;
-    const talents = {};
-    if (characters[character].stage === -1) {
-      stage = 0;
-    } else {
-      stage = -1;
-    }
-    Object.assign(talents, DEFAULT_CHARACTER_STATE[character].talents);
-    const newObj = Object.assign({}, {[character]: {stage, talents}});
-    characters = Object.assign({}, characters, newObj);
+    const currentCharacter = characters[character];
+    const stage = currentCharacter.stage === 0 ? -1 : 0;
+    const newState = Object.assign(currentCharacter, {...DEFAULT_CHARACTER_STATE[character], stage});
+    characters = Object.assign({}, {...characters, [character]: newState});
     this.persistState({characters});
   }
 
@@ -74,7 +72,9 @@ class App extends React.Component {
   }
 
   getTalentLevel = (character, talent) => {
-    return this.state.characters[character].talents[talent];
+    const currentCharacter = this.state.characters[character];
+    const talents = currentCharacter.talents;
+    return character === 'traveler' ? talents[currentCharacter.element][talent] : talents[talent];
   }
 
   setTalentLevel = (character, talent, level) => {
@@ -83,7 +83,13 @@ class App extends React.Component {
     }
     let currentCharacter = this.state.characters[character];
     let currentTalents = currentCharacter.talents;
-    currentTalents = Object.assign({}, currentTalents, {[talent]: level});
+    if (character === 'traveler') {
+      const element = currentCharacter.element;
+      const elementalTalents = Object.assign({}, currentTalents[element], {[talent]: level});
+      currentTalents = Object.assign({}, currentTalents, {[element]: elementalTalents});
+    } else {
+      currentTalents = Object.assign({}, currentTalents, {[talent]: level});
+    }
     currentCharacter = Object.assign({}, currentCharacter, {talents: currentTalents});
     const characters = Object.assign({}, this.state.characters, {[character]: currentCharacter});
     this.persistState({characters});
@@ -91,6 +97,15 @@ class App extends React.Component {
 
   isCharacterSelected = (character) => {
     return this.state.characters[character].stage !== -1;
+  }
+
+  getTravelerElement = () => {
+    return this.state.characters.traveler.element;
+  }
+
+  setTravelerElement = (element) => {
+    const characters = this.state.characters;
+    this.persistState({characters: Object.assign({...characters}, {traveler: {...characters.traveler, element}})});
   }
 
   render() {
@@ -124,7 +139,9 @@ class App extends React.Component {
                 toggleCharacter={this.toggleCharacter}
                 setCharacterStage={this.setCharacterStage}
                 getTalentLevel={this.getTalentLevel}
-                setTalentLevel={this.setTalentLevel}/>
+                setTalentLevel={this.setTalentLevel}
+                getTravelerElement={this.getTravelerElement}
+                setTravelerElement={this.setTravelerElement}/>
             )}/>
             <Route path="/weapons" component={WeaponsPage}></Route>
             <Route path="/materials" render={() => (

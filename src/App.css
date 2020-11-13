@@ -4,8 +4,9 @@
   overflow: auto;
 }
 
-body {
+html, body, #root, .App {
   background: #1d1f29;
+  height: 100%;
   font-size: 16px;
 }
 
@@ -18,7 +19,7 @@ nav {
   z-index: 1;
 }
 
-nav * {
+nav, nav * {
   overflow: hidden;
 }
 
@@ -70,10 +71,6 @@ button:focus {
 
 button:disabled {
   cursor: auto;
-}
-
-.inactive {
-  opacity: 0.3;
 }
 
 .content {
