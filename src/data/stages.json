@@ -105,7 +105,7 @@
             "talent_book_qty": 9,
             "common_stg": 2,
             "common_qty": 9,
-            "mora": 35000
+            "mora": 37500
         },
         {
             "level": 7,
@@ -121,7 +121,7 @@
             "talent_boss_qty": 1,
             "talent_book_stg": 3,
             "talent_book_qty": 6,
-            "common_stg": 2,
+            "common_stg": 3,
             "common_qty": 6,
             "mora": 260000
         },
@@ -129,19 +129,19 @@
             "level": 9,
             "talent_boss_qty": 1,
             "talent_book_stg": 3,
-            "talent_book_qty": 9,
-            "common_stg": 2,
-            "common_qty": 15,
-            "mora": 0
+            "talent_book_qty": 12,
+            "common_stg": 3,
+            "common_qty": 9,
+            "mora": 450000
         },
         {
             "level": 10,
             "talent_boss_qty": 2,
             "talent_book_stg": 3,
-            "talent_book_qty": 12,
+            "talent_book_qty": 16,
             "common_stg": 3,
-            "common_qty": 20,
-            "mora": 0
+            "common_qty": 12,
+            "mora": 700000
         }
     ]
 }

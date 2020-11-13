@@ -1,358 +1,604 @@
 {
-    "diamond_crystal_1": {
-        "name": "Brilliant Diamond Sliver",
-        "type": "crystal"
-    },
-    "diamond_crystal_2": {
-        "name": "Brilliant Diamond Fragment",
-        "type": "crystal"
-    },
-    "diamond_crystal_3": {
-        "name": "Brilliant Diamond Chunk",
-        "type": "crystal"
-    },
-    "diamond_crystal_4": {
-        "name": "Brilliant Diamond Gemstone",
-        "type": "crystal"
-    },
-    "anemo_crystal_1": {
-        "name": "Vayuda Turquoise Sliver",
-        "type": "crystal"
-    },
-    "anemo_crystal_2": {
-        "name": "Vayuda Turquoise Fragment",
-        "type": "crystal"
-    },
-    "anemo_crystal_3": {
-        "name": "Vayuda Turquoise Chunk",
-        "type": "crystal"
-    },
-    "anemo_crystal_4": {
-        "name": "Vayuda Turquoise Gemstone",
-        "type": "crystal"
-    },
-    "cryo_crystal_1": {
-        "name": "Shivada Jade Sliver",
-        "type": "crystal"
-    },
-    "cryo_crystal_2": {
-        "name": "Shivada Jade Fragment",
-        "type": "crystal"
-    },
-    "cryo_crystal_3": {
-        "name": "Shivada Jade Chunk",
-        "type": "crystal"
-    },
-    "cryo_crystal_4": {
-        "name": "Shivada Jade Gemstone",
-        "type": "crystal"
-    },
-    "electro_crystal_1": {
-        "name": "Vajrada Amethyst Sliver",
-        "type": "crystal"
-    },
-    "electro_crystal_2": {
-        "name": "Vajrada Amethyst Fragment",
-        "type": "crystal"
-    },
-    "electro_crystal_3": {
-        "name": "Vajrada Amethyst Chunk",
-        "type": "crystal"
-    },
-    "electro_crystal_4": {
-        "name": "Vajrada Amethyst Gemstone",
-        "type": "crystal"
-    },
-    "geo_crystal_1": {
-        "name": "Prithiva Topaz Sliver",
-        "type": "crystal"
-    },
-    "geo_crystal_2": {
-        "name": "Prithiva Topaz Fragment",
-        "type": "crystal"
-    },
-    "geo_crystal_3": {
-        "name": "Prithiva Topaz Chunk",
-        "type": "crystal"
-    },
-    "geo_crystal_4": {
-        "name": "Prithiva Topaz Gemstone",
-        "type": "crystal"
-    },
-    "hydro_crystal_1": {
-        "name": "Varunada Lazurite Sliver",
-        "type": "crystal"
-    },
-    "hydro_crystal_2": {
-        "name": "Varunada Lazurite Fragment",
-        "type": "crystal"
-    },
-    "hydro_crystal_3": {
-        "name": "Varunada Lazurite Chunk",
-        "type": "crystal"
-    },
-    "hydro_crystal_4": {
-        "name": "Varunada Lazurite Gemstone",
-        "type": "crystal"
-    },
-    "pyro_crystal_1": {
-        "name": "Agnidus Agate Sliver",
-        "type": "crystal"
-    },
-    "pyro_crystal_2": {
-        "name": "Agnidus Agate Fragment",
-        "type": "crystal"
-    },
-    "pyro_crystal_3": {
-        "name": "Agnidus Agate Chunk",
-        "type": "crystal"
-    },
-    "pyro_crystal_4": {
-        "name": "Agnidus Agate Gemstone",
-        "type": "crystal"
-    },
-    "anemo_elemental": {
-        "name": "Hurricane Seed",
-        "type": "elemental"
-    },
-    "cryo_elemental": {
-        "name": "Hoarfrost Core",
-        "type": "elemental"
-    },
-    "electro_elemental": {
-        "name": "Lightning Prism",
-        "type": "elemental"
-    },
-    "geo_elemental": {
-        "name": "Basalt Pillar",
-        "type": "elemental"
-    },
-    "hydro_elemental": {
-        "name": "Cleansing Heart",
-        "type": "elemental"
-    },
-    "pyro_elemental": {
-        "name": "Everflame Seed",
-        "type": "elemental"
-    },
-    "small_lamp_grass": {
-        "name": "Small Lamp Grass",
-        "type": "specialty"
-    },
-    "valberry": {
-        "name": "Valberry",
-        "type": "specialty"
-    },
-    "windwheel_aster": {
-        "name": "Windwheel Aster",
-        "type": "specialty"
-    },
-    "wolfhook": {
-        "name": "Wolfhook",
-        "type": "specialty"
-    },
-    "dandelion_seed": {
-        "name": "Dandelion Seed",
-        "type": "specialty"
-    },
-    "cecilia": {
-        "name": "Cecilia",
-        "type": "specialty"
-    },
-    "philanemo_mushroom": {
-        "name": "Philanemo Mushroom",
-        "type": "specialty"
-    },
-    "calla_lily": {
-        "name": "Calla Lily",
-        "type": "specialty"
-    },
-    "cor_lapis": {
-        "name": "Cor Lapis",
-        "type": "specialty"
-    },
-    "jueyun_chili": {
-        "name": "Jueyun Chili",
-        "type": "specialty"
-    },
-    "qingxin": {
-        "name": "Qingxin",
-        "type": "specialty"
-    },
-    "violetgrass": {
-        "name": "Violetgrass",
-        "type": "specialty"
-    },
-    "noctilucous_jade": {
-        "name": "Noctilucous Jade",
-        "type": "specialty"
-    },
-    "silk_flower": {
-        "name": "Silk Flower",
-        "type": "specialty"
-    },
-    "glaze_lily": {
-        "name": "Glaze Lily",
-        "type": "specialty"
-    },
-    "starconch": {
-        "name": "Starconch",
-        "type": "specialty"
-    },
-    "slime_1": {
-        "name": "Slime Condensate",
-        "type": "common"
-    },
-    "slime_2": {
-        "name": "Slime Secretions",
-        "type": "common"
-    },
-    "slime_3": {
-        "name": "Slime Concentrate",
-        "type": "common"
-    },
-    "mask_1": {
-        "name": "Damaged Mask",
-        "type": "common"
-    },
-    "mask_2": {
-        "name": "Stained Mask",
-        "type": "common"
-    },
-    "mask_3": {
-        "name": "Ominous Mask",
-        "type": "common"
-    },
-    "arrowhead_1": {
-        "name": "Firm Arrowhead",
-        "type": "common"
-    },
-    "arrowhead_2": {
-        "name": "Sharp Arrowhead",
-        "type": "common"
-    },
-    "arrowhead_3": {
-        "name": "Weathered Arrowhead",
-        "type": "common"
-    },
-    "scroll_1": {
-        "name": "Divining Scroll",
-        "type": "common"
-    },
-    "scroll_2": {
-        "name": "Sealed Scroll",
-        "type": "common"
-    },
-    "scroll_3": {
-        "name": "Forbidden Curse Scroll",
-        "type": "common"
-    },
-    "horn_1": {
-        "name": "Heavy Horn",
-        "type": "common"
-    },
-    "horn_2": {
-        "name": "Black Copper Horn",
-        "type": "common"
-    },
-    "horn_3": {
-        "name": "Black Crystal Horn",
-        "type": "common"
-    },
-    "ley_line_1": {
-        "name": "Dead Ley Line Branches",
-        "type": "common"
-    },
-    "ley_line_2": {
-        "name": "Dead Ley Line Leaves",
-        "type": "common"
-    },
-    "ley_line_3": {
-        "name": "Ley Line Sprouts",
-        "type": "common"
-    },
-    "chaos_1": {
-        "name": "Chaos Device",
-        "type": "common"
-    },
-    "chaos_2": {
-        "name": "Chaos Circuit",
-        "type": "common"
-    },
-    "chaos_3": {
-        "name": "Chaos Core",
-        "type": "common"
-    },
-    "mist_1": {
-        "name": "Mist Flower Pollen",
-        "type": "common"
-    },
-    "mist_2": {
-        "name": "Mist Grass",
-        "type": "common"
-    },
-    "mist_3": {
-        "name": "Mist Grass Wick",
-        "type": "common"
-    },
-    "knife_1": {
-        "name": "Hunters Sacrificial Knife",
-        "type": "common"
-    },
-    "knife_2": {
-        "name": "Agents Sacrificial Knife",
-        "type": "common"
-    },
-    "knife_3": {
-        "name": "Inspectors Sacrificial Knife",
-        "type": "common"
-    },
-    "fatui_insignia_1": {
-        "name": "Recruits Insignia",
-        "type": "common"
-    },
-    "fatui_insignia_2": {
-        "name": "Sergeants Insignia",
-        "type": "common"
-    },
-    "fatui_insignia_3": {
-        "name": "Lieutenants Insignia",
-        "type": "common"
-    },
-    "treasure_insignia_1": {
-        "name": "Treasure Hoarder Insignia",
-        "type": "common"
-    },
-    "treasure_insignia_2": {
-        "name": "Silver Raven Insignia",
-        "type": "common"
-    },
-    "treasure_insignia_3": {
-        "name": "Golden Raven Insignia",
-        "type": "common"
-    },
-    "bone_1": {
-        "name": "Fragile Bone Shard",
-        "type": "common"
-    },
-    "bone_2": {
-        "name": "Sturdy Bone Shard",
-        "type": "common"
-    },
-    "bone_3": {
-        "name": "Fossilized Bone Shard",
-        "type": "common"
-    },
-    "nectar_1": {
-        "name": "Whopperflower Nectar",
-        "type": "common"
-    },
-    "nectar_2": {
-        "name": "Shimmering Nectar",
-        "type": "common"
-    },
-    "nectar_3": {
-        "name": "Energy Nectar",
-        "type": "common"
-    }
+  "diamond_crystal_1": {
+    "name": "Brilliant Diamond Sliver",
+    "type": "crystal"
+  },
+  "diamond_crystal_2": {
+    "name": "Brilliant Diamond Fragment",
+    "type": "crystal"
+  },
+  "diamond_crystal_3": {
+    "name": "Brilliant Diamond Chunk",
+    "type": "crystal"
+  },
+  "diamond_crystal_4": {
+    "name": "Brilliant Diamond Gemstone",
+    "type": "crystal"
+  },
+  "anemo_crystal_1": {
+    "name": "Vayuda Turquoise Sliver",
+    "type": "crystal"
+  },
+  "anemo_crystal_2": {
+    "name": "Vayuda Turquoise Fragment",
+    "type": "crystal"
+  },
+  "anemo_crystal_3": {
+    "name": "Vayuda Turquoise Chunk",
+    "type": "crystal"
+  },
+  "anemo_crystal_4": {
+    "name": "Vayuda Turquoise Gemstone",
+    "type": "crystal"
+  },
+  "cryo_crystal_1": {
+    "name": "Shivada Jade Sliver",
+    "type": "crystal"
+  },
+  "cryo_crystal_2": {
+    "name": "Shivada Jade Fragment",
+    "type": "crystal"
+  },
+  "cryo_crystal_3": {
+    "name": "Shivada Jade Chunk",
+    "type": "crystal"
+  },
+  "cryo_crystal_4": {
+    "name": "Shivada Jade Gemstone",
+    "type": "crystal"
+  },
+  "electro_crystal_1": {
+    "name": "Vajrada Amethyst Sliver",
+    "type": "crystal"
+  },
+  "electro_crystal_2": {
+    "name": "Vajrada Amethyst Fragment",
+    "type": "crystal"
+  },
+  "electro_crystal_3": {
+    "name": "Vajrada Amethyst Chunk",
+    "type": "crystal"
+  },
+  "electro_crystal_4": {
+    "name": "Vajrada Amethyst Gemstone",
+    "type": "crystal"
+  },
+  "geo_crystal_1": {
+    "name": "Prithiva Topaz Sliver",
+    "type": "crystal"
+  },
+  "geo_crystal_2": {
+    "name": "Prithiva Topaz Fragment",
+    "type": "crystal"
+  },
+  "geo_crystal_3": {
+    "name": "Prithiva Topaz Chunk",
+    "type": "crystal"
+  },
+  "geo_crystal_4": {
+    "name": "Prithiva Topaz Gemstone",
+    "type": "crystal"
+  },
+  "hydro_crystal_1": {
+    "name": "Varunada Lazurite Sliver",
+    "type": "crystal"
+  },
+  "hydro_crystal_2": {
+    "name": "Varunada Lazurite Fragment",
+    "type": "crystal"
+  },
+  "hydro_crystal_3": {
+    "name": "Varunada Lazurite Chunk",
+    "type": "crystal"
+  },
+  "hydro_crystal_4": {
+    "name": "Varunada Lazurite Gemstone",
+    "type": "crystal"
+  },
+  "pyro_crystal_1": {
+    "name": "Agnidus Agate Sliver",
+    "type": "crystal"
+  },
+  "pyro_crystal_2": {
+    "name": "Agnidus Agate Fragment",
+    "type": "crystal"
+  },
+  "pyro_crystal_3": {
+    "name": "Agnidus Agate Chunk",
+    "type": "crystal"
+  },
+  "pyro_crystal_4": {
+    "name": "Agnidus Agate Gemstone",
+    "type": "crystal"
+  },
+  "anemo_elemental": {
+    "name": "Hurricane Seed",
+    "type": "elemental"
+  },
+  "cryo_elemental": {
+    "name": "Hoarfrost Core",
+    "type": "elemental"
+  },
+  "electro_elemental": {
+    "name": "Lightning Prism",
+    "type": "elemental"
+  },
+  "geo_elemental": {
+    "name": "Basalt Pillar",
+    "type": "elemental"
+  },
+  "hydro_elemental": {
+    "name": "Cleansing Heart",
+    "type": "elemental"
+  },
+  "pyro_elemental": {
+    "name": "Everflame Seed",
+    "type": "elemental"
+  },
+  "boreas_1": {
+    "name": "Tail of Boreas",
+    "type": "talent_boss"
+  },
+  "boreas_2": {
+    "name": "Ring of Boreas",
+    "type": "talent_boss"
+  },
+  "boreas_3": {
+    "name": "Spirit Locket of Boreas",
+    "type": "talent_boss"
+  },
+  "dvalin_1": {
+    "name": "Dvalin's Plume",
+    "type": "talent_boss"
+  },
+  "dvalin_2": {
+    "name": "Dvalin's Claw",
+    "type": "talent_boss"
+  },
+  "dvalin_3": {
+    "name": "Dvalin's Sigh",
+    "type": "talent_boss"
+  },
+  "childe_1": {
+    "name": "Tusk of Monoceros Caeli",
+    "type": "talent_boss"
+  },
+  "childe_2": {
+    "name": "Shard of a Foul Legacy",
+    "type": "talent_boss"
+  },
+  "childe_3": {
+    "name": "Shadow of the Warrior",
+    "type": "talent_boss"
+  },
+  "freedom_1": {
+    "name": "Teachings of \"Freedom\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "freedom_2": {
+    "name": "Guide of \"Freedom\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "freedom_3": {
+    "name": "Philosophies of \"Freedom\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "resistance_1": {
+    "name": "Teachings of \"Resistance\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "resistance_2": {
+    "name": "Guide of \"Resistance\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "resistance_3": {
+    "name": "Philosophies of \"Resistance\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "ballad_1": {
+    "name": "Teachings of \"Ballad\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "ballad_2": {
+    "name": "Guide of \"Ballad\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "ballad_3": {
+    "name": "Philosophies of \"Ballad\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "prosperity_1": {
+    "name": "Teachings of \"Prosperity\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "prosperity_2": {
+    "name": "Guide of \"Prosperity\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "prosperity_3": {
+    "name": "Philosophies of \"Prosperity\"",
+    "type": "talent",
+    "day_group": 1
+  },
+  "diligence_1": {
+    "name": "Teachings of \"Diligence\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "diligence_2": {
+    "name": "Guide of \"Diligence\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "diligence_3": {
+    "name": "Philosophies of \"Diligence\"",
+    "type": "talent",
+    "day_group": 2
+  },
+  "gold_1": {
+    "name": "Teachings of \"Gold\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "gold_2": {
+    "name": "Guide of \"Gold\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "gold_3": {
+    "name": "Philosophies of \"Gold\"",
+    "type": "talent",
+    "day_group": 3
+  },
+  "decarabian_1": {
+    "name": "Tile of Decarabian's Tower",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "decarabian_2": {
+    "name": "Debris of Decarabian's City",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "decarabian_3": {
+    "name": "Fragment of Decarabian's Epic",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "decarabian_4": {
+    "name": "Scattered Piece of Decarabian's Dream",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "boreal_1": {
+    "name": "Tile of Decarabian's Tower",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "boreal_2": {
+    "name": "Debris of Decarabian's City",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "boreal_3": {
+    "name": "Fragment of Decarabian's Epic",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "boreal_4": {
+    "name": "Scattered Piece of Decarabian's Dream",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "dandelion_gladiator_1": {
+    "name": "Fetters of the Dandelion Gladiator",
+    "type": "weapon",
+    "day_group": 3
+  },
+  "dandelion_gladiator_2": {
+    "name": "Chains of the Dandelion Gladiator",
+    "type": "weapon",
+    "day_group": 3
+  },
+  "dandelion_gladiator_3": {
+    "name": "Shackles of the Dandelion Gladiator",
+    "type": "weapon",
+    "day_group": 3
+  },
+  "dandelion_gladiator_4": {
+    "name": "Dream of the Dandelion Gladiator",
+    "type": "weapon",
+    "day_group": 3
+  },
+  "guyun_1": {
+    "name": "Luminous Sands from Guyun",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "guyun_2": {
+    "name": "Lustrous Stone from Guyun",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "guyun_3": {
+    "name": "Relic from Guyun",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "guyun_4": {
+    "name": "Divine Body from Guyun",
+    "type": "weapon",
+    "day_group": 1
+  },
+  "mist_veiled_elixir_1": {
+    "name": "Mist Veiled Lead Elixir",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "mist_veiled_elixir_2": {
+    "name": "Mist Veiled Mercury Elixir",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "mist_veiled_elixir_3": {
+    "name": "Mist Veiled Gold Elixir",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "mist_veiled_elixir_4": {
+    "name": "Mist Veiled Primo Elixir",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "aerosiderite_1": {
+    "name": "Grain of Aerosiderite",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "aerosiderite_2": {
+    "name": "Piece of Aerosiderite",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "aerosiderite_3": {
+    "name": "Bit of Aerosiderite",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "aerosiderite_4": {
+    "name": "Chunk of Aerosiderite",
+    "type": "weapon",
+    "day_group": 2
+  },
+  "small_lamp_grass": {
+    "name": "Small Lamp Grass",
+    "type": "specialty"
+  },
+  "valberry": {
+    "name": "Valberry",
+    "type": "specialty"
+  },
+  "windwheel_aster": {
+    "name": "Windwheel Aster",
+    "type": "specialty"
+  },
+  "wolfhook": {
+    "name": "Wolfhook",
+    "type": "specialty"
+  },
+  "dandelion_seed": {
+    "name": "Dandelion Seed",
+    "type": "specialty"
+  },
+  "cecilia": {
+    "name": "Cecilia",
+    "type": "specialty"
+  },
+  "philanemo_mushroom": {
+    "name": "Philanemo Mushroom",
+    "type": "specialty"
+  },
+  "calla_lily": {
+    "name": "Calla Lily",
+    "type": "specialty"
+  },
+  "cor_lapis": {
+    "name": "Cor Lapis",
+    "type": "specialty"
+  },
+  "jueyun_chili": {
+    "name": "Jueyun Chili",
+    "type": "specialty"
+  },
+  "qingxin": {
+    "name": "Qingxin",
+    "type": "specialty"
+  },
+  "violetgrass": {
+    "name": "Violetgrass",
+    "type": "specialty"
+  },
+  "noctilucous_jade": {
+    "name": "Noctilucous Jade",
+    "type": "specialty"
+  },
+  "silk_flower": {
+    "name": "Silk Flower",
+    "type": "specialty"
+  },
+  "glaze_lily": {
+    "name": "Glaze Lily",
+    "type": "specialty"
+  },
+  "starconch": {
+    "name": "Starconch",
+    "type": "specialty"
+  },
+  "slime_1": {
+    "name": "Slime Condensate",
+    "type": "common"
+  },
+  "slime_2": {
+    "name": "Slime Secretions",
+    "type": "common"
+  },
+  "slime_3": {
+    "name": "Slime Concentrate",
+    "type": "common"
+  },
+  "mask_1": {
+    "name": "Damaged Mask",
+    "type": "common"
+  },
+  "mask_2": {
+    "name": "Stained Mask",
+    "type": "common"
+  },
+  "mask_3": {
+    "name": "Ominous Mask",
+    "type": "common"
+  },
+  "arrowhead_1": {
+    "name": "Firm Arrowhead",
+    "type": "common"
+  },
+  "arrowhead_2": {
+    "name": "Sharp Arrowhead",
+    "type": "common"
+  },
+  "arrowhead_3": {
+    "name": "Weathered Arrowhead",
+    "type": "common"
+  },
+  "scroll_1": {
+    "name": "Divining Scroll",
+    "type": "common"
+  },
+  "scroll_2": {
+    "name": "Sealed Scroll",
+    "type": "common"
+  },
+  "scroll_3": {
+    "name": "Forbidden Curse Scroll",
+    "type": "common"
+  },
+  "horn_1": {
+    "name": "Heavy Horn",
+    "type": "common"
+  },
+  "horn_2": {
+    "name": "Black Copper Horn",
+    "type": "common"
+  },
+  "horn_3": {
+    "name": "Black Crystal Horn",
+    "type": "common"
+  },
+  "ley_line_1": {
+    "name": "Dead Ley Line Branches",
+    "type": "common"
+  },
+  "ley_line_2": {
+    "name": "Dead Ley Line Leaves",
+    "type": "common"
+  },
+  "ley_line_3": {
+    "name": "Ley Line Sprouts",
+    "type": "common"
+  },
+  "chaos_1": {
+    "name": "Chaos Device",
+    "type": "common"
+  },
+  "chaos_2": {
+    "name": "Chaos Circuit",
+    "type": "common"
+  },
+  "chaos_3": {
+    "name": "Chaos Core",
+    "type": "common"
+  },
+  "mist_1": {
+    "name": "Mist Flower Pollen",
+    "type": "common"
+  },
+  "mist_2": {
+    "name": "Mist Grass",
+    "type": "common"
+  },
+  "mist_3": {
+    "name": "Mist Grass Wick",
+    "type": "common"
+  },
+  "knife_1": {
+    "name": "Hunters Sacrificial Knife",
+    "type": "common"
+  },
+  "knife_2": {
+    "name": "Agents Sacrificial Knife",
+    "type": "common"
+  },
+  "knife_3": {
+    "name": "Inspectors Sacrificial Knife",
+    "type": "common"
+  },
+  "fatui_insignia_1": {
+    "name": "Recruits Insignia",
+    "type": "common"
+  },
+  "fatui_insignia_2": {
+    "name": "Sergeants Insignia",
+    "type": "common"
+  },
+  "fatui_insignia_3": {
+    "name": "Lieutenants Insignia",
+    "type": "common"
+  },
+  "treasure_insignia_1": {
+    "name": "Treasure Hoarder Insignia",
+    "type": "common"
+  },
+  "treasure_insignia_2": {
+    "name": "Silver Raven Insignia",
+    "type": "common"
+  },
+  "treasure_insignia_3": {
+    "name": "Golden Raven Insignia",
+    "type": "common"
+  },
+  "bone_1": {
+    "name": "Fragile Bone Shard",
+    "type": "common"
+  },
+  "bone_2": {
+    "name": "Sturdy Bone Shard",
+    "type": "common"
+  },
+  "bone_3": {
+    "name": "Fossilized Bone Shard",
+    "type": "common"
+  },
+  "nectar_1": {
+    "name": "Whopperflower Nectar",
+    "type": "common"
+  },
+  "nectar_2": {
+    "name": "Shimmering Nectar",
+    "type": "common"
+  },
+  "nectar_3": {
+    "name": "Energy Nectar",
+    "type": "common"
+  }
 }
