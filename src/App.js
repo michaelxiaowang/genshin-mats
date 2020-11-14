@@ -7,6 +7,7 @@ import MaterialsPage from './components/MaterialsPage';
 import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
+import Weapons from './data/weapons.json';
 
 import './App.css';
 
@@ -35,7 +36,9 @@ const DEFAULT_CHARACTER_STATE = Object.entries(Characters).reduce((state, [key, 
   return Object.assign(state, {[key]: character});
 }, {});
 
-const DEFAULT_WEAPON_STATE = {}
+const DEFAULT_WEAPON_STATE = Object.keys(Weapons).reduce((state, key) => {
+  return Object.assign(state, {[key]: {stage: -1}});
+}, {});
 
 const DEFAULT_STATE = { characters: DEFAULT_CHARACTER_STATE, weapons: DEFAULT_WEAPON_STATE };
 
@@ -148,7 +151,11 @@ class App extends React.Component {
                 getTravelerElement={this.getTravelerElement}
                 setTravelerElement={this.setTravelerElement}/>
             )}/>
-            <Route path="/weapons" component={WeaponsPage}></Route>
+            <Route path="/weapons" render={(props) => (
+              <WeaponsPage
+                weapons={Weapons}
+              />
+            )}/>
             <Route path="/materials" render={() => (
               <MaterialsPage
                 state={this.state}
