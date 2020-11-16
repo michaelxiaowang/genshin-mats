@@ -10,52 +10,67 @@ class CharactersPage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { elementFilters: [...elementList], weaponFilters: [...weaponList] };
+    this.state = {};
   }
 
-  toggleElement(element) {
-    let elementFilters = this.state.elementFilters;
-    elementFilters = elementFilters.includes(element) ? elementFilters.filter(item => item !== element) : [element, ...elementFilters];
-    this.setState({elementFilters});
+  selectElement(element) {
+    const newElement = this.state.element === element ? undefined : element;
+    this.setState({element: newElement});
   }
 
-  toggleWeapon(weapon) {
-    let weaponFilters = this.state.weaponFilters;
-    weaponFilters = weaponFilters.includes(weapon) ? weaponFilters.filter(item => item !== weapon) : [weapon, ...weaponFilters];
-    this.setState({weaponFilters});
+  selectWeapon(weapon) {
+    const newWeapon = this.state.weapon === weapon ? undefined : weapon;
+    this.setState({weapon: newWeapon});
   }
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <div className="filters">
-          <ul className="element-filters">
+          <div className="element-filters">
             {
               elementList.map(element => (
-                <li key={element}>
-                  <button className={"filter " + (this.state.elementFilters.includes(element) ? 'active' : '')} onClick={() => this.toggleElement(element)}>
+                <React.Fragment key={element}>
+                  <input
+                    type="checkbox"
+                    name={"element"}
+                    id={element}
+                    value={element}
+                    checked={this.state.element === element}
+                    onChange={() => this.selectElement(element)}
+                    />
+                  <label htmlFor={element}>
                     <img className="filter-image" src={process.env.PUBLIC_URL + '/images/' + element + '.png'} alt={element}/>
-                  </button>
-                </li>
+                  </label>
+                </React.Fragment>
               ))
             }
-          </ul>
-          <ul className="weapon-filters">
+          </div>
+          <div className="weapon-filters">
             {
               weaponList.map(weapon => (
-                <li key={weapon}>
-                  <button className={"filter " + (this.state.weaponFilters.includes(weapon) ? 'active' : '')} onClick={() => this.toggleWeapon(weapon)}>
+                <React.Fragment key={weapon}>
+                  <input
+                    type="checkbox"
+                    name={"weapon"}
+                    id={weapon}
+                    value={weapon}
+                    checked={this.state.weapon === weapon}
+                    onChange={() => this.selectWeapon(weapon)}
+                    />
+                  <label htmlFor={weapon}>
                     <img className="filter-image" src={process.env.PUBLIC_URL + '/images/' + weapon + '.png'} alt={weapon}/>
-                  </button>
-                </li>
+                  </label>
+                </React.Fragment>
               ))
             }
-          </ul>
+          </div>
         </div>
         <div className="character-list">
             {
               Object.entries(this.props.characters)
-                .filter(([key, value]) => ['flex', ...this.state.elementFilters].includes(value.type) && this.state.weaponFilters.includes(value.weapon))
+                .filter(([key, value]) => this.state.element === undefined || this.state.element === value.type || value.type === 'flex')
+                .filter(([key, value]) => this.state.weapon === undefined || this.state.weapon === value.weapon)
                 .map(([key, value]) => (
                   <div key={key} className="character-portrait">
                     <img
@@ -81,7 +96,7 @@ class CharactersPage extends React.Component {
                 ))
             }
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }

@@ -54,6 +54,14 @@ nav li a:active {
   box-sizing: border-box;
 }
 
+.filters {
+  display: flex;
+  background: #1d1f29;
+  margin: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 button {
   display: block;
   cursor: pointer;
@@ -75,8 +83,42 @@ button:disabled {
 
 .content {
   margin: 3.5rem auto 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   background: #222431;
   max-width: 65rem;
+}
+
+/*
+Filters css should be moved into new filters component
+*/
+.element-filters input,
+.weapon-filters input {
+  display: none;
+}
+
+.element-filters label,
+.weapon-filters label {
+  display: flex;
+  cursor: pointer;
+  margin: 0.5rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.element-filters img,
+.weapon-filters img {
+  max-width: 3rem;
+  max-height: 3rem;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  opacity: 0.3;
+}
+
+.element-filters img:hover,
+.weapon-filters img:hover,
+.element-filters input:checked + label img,
+.weapon-filters input:checked + label img {
+  opacity: 1;
+  background: #36384a;
 }

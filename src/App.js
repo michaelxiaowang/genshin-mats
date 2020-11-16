@@ -63,7 +63,7 @@ class App extends React.Component {
   toggleCharacter = (character) => {
     let characters = this.state.characters;
     const currentCharacter = characters[character];
-    const stage = currentCharacter.stage === 0 ? -1 : 0;
+    const stage = currentCharacter.stage === -1 ? 0 : -1;
     const newState = Object.assign(currentCharacter, {...DEFAULT_CHARACTER_STATE[character], stage});
     characters = Object.assign({}, {...characters, [character]: newState});
     this.persistState({characters});

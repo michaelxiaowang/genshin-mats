@@ -55,7 +55,6 @@ function MaterialsPage(props) {
 
   return (
     <div>
-      <h1>Materials</h1>
       <ul className="material-list">
         {
           names.map(material => (
