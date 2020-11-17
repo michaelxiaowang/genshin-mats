@@ -14,10 +14,21 @@ class WeaponsPage extends React.Component {
     this.setState({weapon: newWeapon});
   }
 
+  setSearchText(searchText) {
+    this.setState({ searchText });
+  }
+
   render() {
     return (
       <>
         <div className="filters">
+          <div className="search-filter">
+            <input
+              type="text"
+              value={this.state.searchText}
+              placeholder="Search for a weapon..."
+              onChange={(e) => this.setSearchText(e.target.value)} />
+          </div>
           <div className="weapon-filters">
             {
               weaponList.map(weapon => (
@@ -41,9 +52,14 @@ class WeaponsPage extends React.Component {
   
         {
           Object.entries(this.props.weapons)
+          .filter(([key, value]) => this.state.searchText === undefined || value.name.toLowerCase().includes(this.state.searchText.toLowerCase()))
           .filter(([key, value]) => this.state.weapon === undefined || this.state.weapon === value.type)
           .map(([key, value]) => (
-            <img key={key} className="weapon" src={process.env.PUBLIC_URL + '/images/weapons/' + key + '.png'} alt={value.name}/>
+            <div className="weapon-details">
+              <img key={key} className="weapon" src={process.env.PUBLIC_URL + '/images/weapons/' + key + '.png'} alt={value.name}/>
+              <label className="weapon-name">{value.name}</label>
+            </div>
+            
           ))
         }
       </>

@@ -7,20 +7,35 @@ h1 {
 
 .material-list {
   padding: 0;
-  margin-left: 1rem;
 }
 
 .material {
   height: 3rem;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  padding: 0.5rem;
+}
+
+/* .material:nth-child(odd) {
+  background: #36384a;
+} */
+
+.material-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  background: #36384a;
+  margin: 0 1rem;
 }
 
 .material-image {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+  width: auto;
+  height: auto;
+  max-width: 2rem;
+  max-height: 2rem;
 }
 
 .material-text {

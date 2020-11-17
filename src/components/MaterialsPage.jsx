@@ -59,7 +59,9 @@ function MaterialsPage(props) {
         {
           names.map(material => (
             <li className="material" key={material}>
-              <img className="material-image" src={getImagePath(material)} alt={material}></img>
+              <div className="material-image-container">
+                <img className="material-image" src={getImagePath(material)} alt={material} />
+              </div>
               <label className="material-text">{material} - {materials[material].toLocaleString()}</label>
             </li>
           ))

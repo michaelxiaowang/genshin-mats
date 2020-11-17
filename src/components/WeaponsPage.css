@@ -1,4 +1,19 @@
 .weapon {
-  width: 4rem;
-  height: 4.5rem;
+  width: auto;
+  height: auto;
+  max-width: 3rem;
+  max-height: 3rem;
+  background: #36384a;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.weapon-details {
+  margin: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.weapon-name {
+  color: white;
 }

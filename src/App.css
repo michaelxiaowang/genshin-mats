@@ -91,6 +91,7 @@ Filters css should be moved into new filters component
   margin: 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   border-radius: 0.25rem;
 }
 
@@ -99,13 +100,15 @@ Filters css should be moved into new filters component
 }
 
 .search-filter {
-  flex-basis: 100%;
+  flex-basis: 70%;
+  min-width: 20rem;
 }
 
 .search-filter input {
   margin: 1rem auto 1rem auto;
   padding-left: 1rem;
   width: 90%;
+  line-height: 1rem;
   color: white;
   background: transparent;
   border-radius: 0.25rem;
