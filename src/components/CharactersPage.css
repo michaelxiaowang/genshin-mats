@@ -1,10 +1,3 @@
-.filters div {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-}
-
 .character-list {
   display: flex;
   flex-wrap: wrap;

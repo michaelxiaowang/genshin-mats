@@ -69,8 +69,8 @@ function CharacterInfo(props) {
             }
           </ul>
         </div>
-        <div className="character-info-grp">
-          <h2 className="ascension-title">Ascension</h2>
+        <div className="character-info-grp materials">
+          <h2 className="materials-title">Materials</h2>
         </div>
       </div>
     </>

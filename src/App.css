@@ -54,14 +54,6 @@ nav li a:active {
   box-sizing: border-box;
 }
 
-.filters {
-  display: flex;
-  background: #1d1f29;
-  margin: 2rem;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 button {
   display: block;
   cursor: pointer;
@@ -93,6 +85,38 @@ button:disabled {
 /*
 Filters css should be moved into new filters component
 */
+.filters {
+  display: flex;
+  background: #1d1f29;
+  margin: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 0.25rem;
+}
+
+.filters div {
+  display: flex;
+}
+
+.search-filter {
+  flex-basis: 100%;
+}
+
+.search-filter input {
+  margin: 1rem auto 1rem auto;
+  padding-left: 1rem;
+  width: 90%;
+  color: white;
+  background: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid #36384a;
+}
+
+.search-filter input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
 .element-filters input,
 .weapon-filters input {
   display: none;
@@ -108,8 +132,8 @@ Filters css should be moved into new filters component
 
 .element-filters img,
 .weapon-filters img {
-  max-width: 3rem;
-  max-height: 3rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
   box-sizing: border-box;
   padding: 0.25rem;
   opacity: 0.3;

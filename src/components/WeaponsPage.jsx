@@ -1,7 +1,7 @@
 import React from 'react';
 import "./WeaponsPage.css";
 
-let weaponList = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
+const weaponList = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
 
 class WeaponsPage extends React.Component {
   constructor(props) {
