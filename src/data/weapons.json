@@ -183,6 +183,46 @@
     "common1": "ley_line",
     "common2": "slime"
   },
+  "wolfs_gravestone": {
+    "name": "Wolf's Gravestone",
+    "type": "claymore",
+    "rarity": 5,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "scroll"
+  },
+  "blackcliff_slasher": {
+    "name": "Blackcliff Slasher",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "fatui_insignia"
+  },
+  "favonius_greatsword": {
+    "name": "Favonius Greatsword",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "fatui_insignia"
+  },
+  "prototype_aminus": {
+    "name": "Prototype Aminus",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "mask"
+  },
+  "rainslasher": {
+    "name": "Rainslasher",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "scroll"
+  },
   "sacrificial_greatsword": {
     "name": "Sacrificial Greatsword",
     "type": "claymore",
@@ -190,6 +230,38 @@
     "weapon": "boreal",
     "common1": "ley_line",
     "common2": "arrowhead"
+  },
+  "royal_greatsword": {
+    "name": "Royal Greatsword",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "slime"
+  },
+  "serpent_spine": {
+    "name": "Serpent Spine",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "nectar"
+  },
+  "the_bell": {
+    "name": "The Bell",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "nectar"
+  },
+  "whiteblind": {
+    "name": "Whiteblind",
+    "type": "claymore",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "treasure_insignia"
   },
   "primordial_jade_winged_spear": {
     "name": "Primordial Jade Winged-Spear",
