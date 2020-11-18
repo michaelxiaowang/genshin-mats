@@ -271,6 +271,22 @@
     "common1": "knife",
     "common2": "fatui_insignia"
   },
+  "skyward_spine": {
+    "name": "Skyward Spine",
+    "type": "polearm",
+    "rarity": 5,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "scroll"
+  },
+  "blackcliff_pole": {
+    "name": "Blackcliff Pole",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "fatui_insignia"
+  },
   "crescent_pike": {
     "name": "Crescent Pike",
     "type": "polearm",
@@ -278,6 +294,46 @@
     "weapon": "guyun",
     "common1": "knife",
     "common2": "treasure_insignia"
+  },
+  "deathmatch": {
+    "name": "Deathmatch",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "nectar"
+  },
+  "dragons_bane": {
+    "name": "Dragon's Bane",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "scroll"
+  },
+  "favonius_lance": {
+    "name": "Favonius Lance",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "slime"
+  },
+  "prototype_grudge": {
+    "name": "Prototype Grudge",
+    "type": "polearm",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "mask"
+  },
+  "aquila_favonia": {
+    "name": "Aquila Favonia",
+    "type": "sword",
+    "rarity": 5,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "arrowhead"
   },
   "skyward_blade": {
     "name": "Skyward Blade",
@@ -287,12 +343,68 @@
     "common1": "ley_line",
     "common2": "slime"
   },
-  "favonius_sword": {
-    "name": "Favonius Sword",
+  "blackcliff_longsword": {
+    "name": "Blackcliff Longsword",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "arrowhead"
+  },
+  "iron_sting": {
+    "name": "Iron String",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "nectar"
+  },
+  "lions_roar": {
+    "name": "Lion's Roar",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "treasure_insignia"
+  },
+  "prototype_rancour": {
+    "name": "Prototype Rancour",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "fatui_insignia"
+  },
+  "royal_longsword": {
+    "name": "Royal Longsword",
     "type": "sword",
     "rarity": 4,
     "weapon": "decarabian",
     "common1": "horn",
-    "common2": "arrowhead"
+    "common2": "mask"
+  },
+  "sacrificial_sword": {
+    "name": "Sacrificial Sword",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "scroll"
+  },
+  "the_black_sword": {
+    "name": "The Black Sword",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "slime"
+  },
+  "the_flute": {
+    "name": "The Flute",
+    "type": "sword",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "slime"
   }
 }
