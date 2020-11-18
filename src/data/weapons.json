@@ -7,6 +7,14 @@
     "common1": "chaos",
     "common2": "slime"
   },
+  "skyward_harp": {
+    "name": "Skyward Harp",
+    "type": "bow",
+    "rarity": 5,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "arrowhead"
+  },
   "compound_bow": {
     "name": "Compound Bow",
     "type": "bow",
@@ -14,6 +22,70 @@
     "weapon": "aerosiderite",
     "common1": "bone",
     "common2": "fatui_insignia"
+  },
+  "blackcliff_warbow": {
+    "name": "Blackcliff Warbow",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "treasure_insignia"
+  },
+  "the_viridescent_hunt": {
+    "name": "The Viridescent Hunt",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "arrowhead"
+  },
+  "prototype_crescent": {
+    "name": "Prototype Crescent",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "treasure_insignia"
+  },
+  "sacrificial_bow": {
+    "name": "Sacrificial Bow",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "slime"
+  },
+  "rust": {
+    "name": "Rust",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "mask"
+  },
+  "the_stringless": {
+    "name": "The Stringless",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "decarabian",
+    "common1": "horn",
+    "common2": "arrowhead"
+  },
+  "royal_bow": {
+    "name": "Royal Bow",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "scroll"
+  },
+  "favonius_warbow": {
+    "name": "Favonius Warbow",
+    "type": "bow",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "nectar"
   },
   "lost_prayer_to_the_sacred_winds": {
     "name": "Lost Prayer to the Sacred Winds",
@@ -23,6 +95,30 @@
     "common1": "chaos",
     "common2": "slime"
   },
+  "skyward_atlas": {
+    "name": "Skyward Atlas",
+    "type": "catalyst",
+    "rarity": 5,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "arrowhead"
+  },
+  "blackcliff_amulet": {
+    "name": "Blackcliff Amulet",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "nectar"
+  },
+  "eye_of_perception": {
+    "name": "Eye of Perception",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "mask"
+  },
   "favonius_codex": {
     "name": "Favonius Codex",
     "type": "catalyst",
@@ -30,6 +126,54 @@
     "weapon": "decarabian",
     "common1": "horn",
     "common2": "scroll"
+  },
+  "prototype_malice": {
+    "name": "Prototype Malice",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "arrowhead"
+  },
+  "mappa_mare": {
+    "name": "Mappa Mare",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "slime"
+  },
+  "royal_grimoire": {
+    "name": "Royal Grimoire",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "slime"
+  },
+  "sacrificial_fragments": {
+    "name": "Sacrificial Fragments",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "dandelion_gladiator",
+    "common1": "chaos",
+    "common2": "treasure_insignia"
+  },
+  "solar_pearl": {
+    "name": "Solar Pearl",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "guyun",
+    "common1": "knife",
+    "common2": "nectar"
+  },
+  "the_widsith": {
+    "name": "The Widsith",
+    "type": "catalyst",
+    "rarity": 4,
+    "weapon": "boreal",
+    "common1": "ley_line",
+    "common2": "mask"
   },
   "skyward_pride": {
     "name": "Skyward Pride",
