@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import StarLevel from './StarLevel';
+import TypeFilter from './TypeFilter';
 import "./CharactersPage.css";
-
-const elementList = ['anemo', 'cryo', 'electro', 'dendro', 'geo', 'hydro', 'pyro'];
-const weaponList = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
 
 class CharactersPage extends React.Component {
 
@@ -13,12 +11,12 @@ class CharactersPage extends React.Component {
     this.state = {};
   }
 
-  selectElement(element) {
+  selectElement = (element) => {
     const newElement = this.state.element === element ? undefined : element;
     this.setState({ element: newElement });
   }
 
-  selectWeapon(weapon) {
+  selectWeapon = (weapon) => {
     const newWeapon = this.state.weapon === weapon ? undefined : weapon;
     this.setState({ weapon: newWeapon });
   }
@@ -39,43 +37,9 @@ class CharactersPage extends React.Component {
               onChange={(e) => this.setSearchText(e.target.value)} />
           </div>
 
-          <div className="element-filters">
-            {
-              elementList.map(element => (
-                <React.Fragment key={element}>
-                  <input
-                    type="checkbox"
-                    name={"element"}
-                    id={element}
-                    value={element}
-                    checked={this.state.element === element}
-                    onChange={() => this.selectElement(element)}
-                  />
-                  <label htmlFor={element}>
-                    <img className="filter-image" src={process.env.PUBLIC_URL + '/images/' + element + '.png'} alt={element} />
-                  </label>
-                </React.Fragment>
-              ))
-            }
-          </div>
-          <div className="weapon-filters">
-            {
-              weaponList.map(weapon => (
-                <React.Fragment key={weapon}>
-                  <input
-                    type="checkbox"
-                    name={"weapon"}
-                    id={weapon}
-                    value={weapon}
-                    checked={this.state.weapon === weapon}
-                    onChange={() => this.selectWeapon(weapon)} />
-                  <label htmlFor={weapon}>
-                    <img className="filter-image" src={process.env.PUBLIC_URL + '/images/' + weapon + '.png'} alt={weapon} />
-                  </label>
-                </React.Fragment>
-              ))
-            }
-          </div>
+          <TypeFilter type="element" checked={this.state.element} selectFilter={this.selectElement} />
+          <TypeFilter type="weapon" checked={this.state.weapon} selectFilter={this.selectWeapon} />
+          
         </div>
         <div className="character-list">
           {

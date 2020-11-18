@@ -1,0 +1,25 @@
+.type-filter input {
+  display: none;
+}
+
+.filter-label {
+  display: flex;
+  cursor: pointer;
+  margin: 0.5rem 0.25rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.type-filter img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  opacity: 0.3;
+}
+
+.type-filter img:hover,
+.type-filter input:checked + label img {
+  opacity: 1;
+  background: #36384a;
+}
