@@ -116,6 +116,29 @@ class App extends React.Component {
     this.persistState({characters: Object.assign({...characters}, {traveler: {...characters.traveler, element}})});
   }
 
+  toggleWeapon = (weapon) => {
+    let weapons = this.state.weapons;
+    const currentWeapon = weapons[weapon];
+    const stage = currentWeapon.stage === -1 ? 0 : -1;
+    const newState = Object.assign(currentWeapon, {...DEFAULT_WEAPON_STATE[weapon], stage});
+    weapons = Object.assign({}, {...weapons, [weapon]: newState});
+    this.persistState({weapons});
+  }
+
+  getWeaponStage = (weapon) => {
+    return this.isWeaponSelected(weapon) ? this.state.weapons[weapon].stage : -1;
+  }
+
+  setWeaponStage = (weapon, stage) => {
+    const newState = Object.assign({}, this.state.weapons[weapon], {stage});
+    const weapons = Object.assign({}, this.state.weapons, {[weapon]: newState});
+    this.persistState({weapons});
+  }
+
+  isWeaponSelected = (weapon) => {
+    return this.state.weapons[weapon].stage !== -1;
+  }
+
   render() {
     return (
       <HashRouter basename="/">
@@ -135,8 +158,8 @@ class App extends React.Component {
               <CharactersPage
                 characters={Characters}
                 selected={this.isCharacterSelected}
-                getCharacterStage={this.getCharacterStage}
                 toggleCharacter={this.toggleCharacter}
+                getCharacterStage={this.getCharacterStage}
                 setCharacterStage={this.setCharacterStage}/>
             )}/>
             <Route path="/characters/:character" render={(props) => (
@@ -154,14 +177,19 @@ class App extends React.Component {
             <Route path="/weapons" render={(props) => (
               <WeaponsPage
                 weapons={Weapons}
+                selected={this.isWeaponSelected}
+                toggleWeapon={this.toggleWeapon}
+                getWeaponStage={this.getWeaponStage}
+                setWeaponStage={this.setWeaponStage}
               />
             )}/>
-            <Route path="/materials" render={() => (
+            <Route path="/materials" render={(props) => (
               <MaterialsPage
                 state={this.state}
                 stages={Stages}
                 characters={Characters}
-                materials={Materials}/>
+                materials={Materials}
+                weapons={Weapons}/>
             )}/>
           </div>
         </React.Fragment>

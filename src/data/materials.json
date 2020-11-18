@@ -282,22 +282,22 @@
     "day_group": 1
   },
   "boreal_1": {
-    "name": "Tile of Decarabian's Tower",
+    "name": "Boreal Wolf's Milk Tooth",
     "type": "weapon",
     "day_group": 2
   },
   "boreal_2": {
-    "name": "Debris of Decarabian's City",
+    "name": "Boreal Wolf's Cracked Tooth",
     "type": "weapon",
     "day_group": 2
   },
   "boreal_3": {
-    "name": "Fragment of Decarabian's Epic",
+    "name": "Boreal Wolf's Broken Fang",
     "type": "weapon",
     "day_group": 2
   },
   "boreal_4": {
-    "name": "Scattered Piece of Decarabian's Dream",
+    "name": "Boreal Wolf's Nostalgia",
     "type": "weapon",
     "day_group": 2
   },
@@ -498,7 +498,7 @@
     "type": "common"
   },
   "horn_2": {
-    "name": "Black Copper Horn",
+    "name": "Black Bronze Horn",
     "type": "common"
   },
   "horn_3": {
@@ -506,7 +506,7 @@
     "type": "common"
   },
   "ley_line_1": {
-    "name": "Dead Ley Line Branches",
+    "name": "Dead Ley Line Branch",
     "type": "common"
   },
   "ley_line_2": {

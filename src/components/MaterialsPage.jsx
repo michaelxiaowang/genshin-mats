@@ -50,6 +50,26 @@ function MaterialsPage(props) {
         }
       })
     });
+  
+  Object.entries(props.state.weapons)
+    .filter(([key, value]) => value['stage'] !== -1)
+    .forEach(([key, value]) => {
+        const weapons = props.weapons;
+        const weapon = key;
+        const details = weapons[weapon];
+        for (let i = value.stage; i < 6; i++) {
+          const requirements = props.stages.weapons[details.rarity][i];
+          const weapon_material = props.materials[`${details.weapon}_${requirements.weapon_stg}`].name;
+          const common_material1 = props.materials[`${details.common1}_${requirements.common_stg}`].name;
+          const common_material2 = props.materials[`${details.common2}_${requirements.common_stg}`].name;
+          const weapon_qty = requirements.weapon_qty;
+          const common_qty_1 = requirements.common_qty_1;
+          const common_qty_2 = requirements.common_qty_2;
+          addMaterial(materials, weapon_material, weapon_qty);
+          addMaterial(materials, common_material1, common_qty_1);
+          addMaterial(materials, common_material2, common_qty_2);
+        }
+    });
   let names = Object.keys(materials);
   names = Object.values(props.materials).map(material => material.name).filter(name => names.includes(name));
 
