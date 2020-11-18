@@ -143,11 +143,11 @@ class App extends React.Component {
     return (
       <HashRouter basename="/">
         <>
-          <nav className="navbar">
-            <ul>
-              <li><NavLink exact to="/characters">Characters</NavLink></li>
-              <li><NavLink exact to="/weapons">Weapons</NavLink></li>
-              <li><NavLink exact to="/materials">Materials</NavLink></li>
+          <nav className="nav">
+            <ul className="nav-list">
+              <li className="nav-list-item"><NavLink className="nav-link" exact to="/characters">Characters</NavLink></li>
+              <li className="nav-list-item"><NavLink className="nav-link" exact to="/weapons">Weapons</NavLink></li>
+              <li className="nav-list-item"><NavLink className="nav-link" exact to="/materials">Materials</NavLink></li>
             </ul>
           </nav>
           <div className="content">

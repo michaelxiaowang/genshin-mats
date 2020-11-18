@@ -1,48 +1,43 @@
 html, body, #root, .App {
   background: #1d1f29;
-  height: 100%;
-  font-size: 16px;
+  color: white;
 }
 
-nav {
+.nav {
   background-color: #222431;
   position: fixed;
   top: 0;
   width: 100%;
   height: 2.5rem;
-  color: white;
   z-index: 1;
 }
 
-nav, nav * {
-  overflow: hidden;
-}
-
-nav ul {
+.nav-list {
   margin: auto;
   padding-left: 2rem;
-  width: 65rem;
-  height: 100%;
+  max-width: 65rem;
   list-style-type: none;
   display: flex;
-}
-
-nav li {
-  margin-right: 1rem;
   line-height: 2.5rem;
 }
 
-nav li a {
+.nav-list-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
   display: inline-block;
   height: 2.5rem;
   text-decoration: none;
-  color: white;
   opacity: 0.6;
 }
 
-nav li a:hover,
-nav li a.active,
-nav li a:active {
+.nav-link:visited {
+  color: white;
+}
+
+.nav-link:hover,
+.nav-link.active {
   line-height: 2.5rem;
   opacity: 1;
   border-bottom: 0.25rem solid#42a5f5;
@@ -102,7 +97,6 @@ Filters css should be moved into new filters component
   padding-left: 1rem;
   width: 90%;
   line-height: 1rem;
-  color: white;
   background: transparent;
   border-radius: 0.25rem;
   border: 1px solid #36384a;

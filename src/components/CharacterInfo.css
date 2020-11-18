@@ -1,8 +1,11 @@
 .back-button {
   text-decoration: none;
-  color: white;
   font-size: 2rem;
   margin-left: 0.5rem;
+}
+
+.back-button:visited {
+  color: white;
 }
 
 .character-info {
@@ -12,12 +15,7 @@
   flex-wrap: wrap;
 }
 
-.character-info * {
-  color: white;
-}
-
 .character-info.inactive > * {
-  color: white;
   opacity: 0.3;
 }
 
@@ -97,6 +95,7 @@
   min-height: 2rem;
   min-width: 2rem;
   border-radius: 0.25rem;
+  color: white;
 }
 
 .talent-level {
