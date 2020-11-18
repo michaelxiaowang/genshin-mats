@@ -28,11 +28,13 @@ function CharacterInfo(props) {
             </select>
           }
           <div className="character-card">
-            <img
-              className={"character-icon"}
-              src={process.env.PUBLIC_URL + '/images/characters/' + name + '.png'}
-              alt={name}
-              onClick={(e) => props.toggleCharacter(characterKey, e)} />
+            <button className="character-toggle">
+              <img
+                className={"character-icon"}
+                src={process.env.PUBLIC_URL + '/images/characters/' + name + '.png'}
+                alt={name}
+                onClick={(e) => props.toggleCharacter(characterKey, e)} />
+            </button>
             {
               <img
                 className={"character-type"}
@@ -63,7 +65,6 @@ function CharacterInfo(props) {
                       disabled={disabled}
                       onClick={(e) => props.setTalentLevel(characterKey, talent, props.getTalentLevel(characterKey, talent) + 1)}>+</button>
                   </div>
-
                 </li>
               ))
             }

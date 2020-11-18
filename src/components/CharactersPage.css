@@ -18,12 +18,22 @@
   opacity: 0.3;
 }
 
+.character-toggle {
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.character-toggle:hover .character-icon,
+.character-toggle:hover + .character-type {
+  opacity: 1;
+}
+
 .character-icon {
+  display: flex;
   background: #36384a;
   border-radius: 0.25rem;
   width: 5rem;
   height: 5rem;
-  margin-bottom: 0.5rem;
   cursor: pointer;
 }
 

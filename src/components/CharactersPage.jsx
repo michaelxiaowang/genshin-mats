@@ -68,8 +68,7 @@ class CharactersPage extends React.Component {
                     id={weapon}
                     value={weapon}
                     checked={this.state.weapon === weapon}
-                    onChange={() => this.selectWeapon(weapon)}
-                  />
+                    onChange={() => this.selectWeapon(weapon)} />
                   <label htmlFor={weapon}>
                     <img className="filter-image" src={process.env.PUBLIC_URL + '/images/' + weapon + '.png'} alt={weapon} />
                   </label>
@@ -86,17 +85,21 @@ class CharactersPage extends React.Component {
               .filter(([key, value]) => this.state.weapon === undefined || this.state.weapon === value.weapon)
               .map(([key, value]) => (
                 <div key={key} className="character-portrait">
-                  <img
-                    className={"character-icon " + (this.props.selected(key) ? '' : 'inactive')}
-                    src={process.env.PUBLIC_URL + '/images/characters/' + value.name + '.png'}
-                    alt={value.name}
-                    onClick={(e) => this.props.toggleCharacter(key, e)} />
+                  <button className="character-toggle">
+                    <img
+                      className={"character-icon " + (this.props.selected(key) ? '' : 'inactive')}
+                      src={process.env.PUBLIC_URL + '/images/characters/' + value.name + '.png'}
+                      alt={value.name}
+                      onClick={(e) => this.props.toggleCharacter(key, e)}
+                      loading="lazy" />
+                  </button>
                   {
                     key !== 'traveler' &&
                     <img
                       className={"character-type " + (this.props.selected(key) ? '' : 'inactive')}
                       src={process.env.PUBLIC_URL + '/images/' + value.type + '.png'}
-                      alt={value.type} />
+                      alt={value.type}
+                      loading="lazy" />
                   }
                   <StarLevel
                     name={key}

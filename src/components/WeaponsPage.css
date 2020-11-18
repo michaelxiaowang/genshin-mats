@@ -8,6 +8,10 @@
   border-radius: 0.5rem;
 }
 
+.weapon-toggle:hover .weapon-image {
+  opacity: 1;
+}
+
 .weapon-image.inactive {
   opacity: 0.3;
 }
@@ -37,6 +41,7 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   text-align: center;
+  opacity: 0.6;
 }
 
 .weapon-card {
@@ -48,5 +53,5 @@
 .weapon-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
