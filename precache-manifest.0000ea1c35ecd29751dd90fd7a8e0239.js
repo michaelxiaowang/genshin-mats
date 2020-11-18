@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "958570474a0c4a9f0ef57c9e983c0e90",
+    "revision": "f5eb80b2072e6d76015af1d4723d0d53",
     "url": "/genshin-mats/index.html"
   },
   {
-    "revision": "2d708f91c97f258b5f03",
+    "revision": "e7ad89fe77cdd0ad166d",
     "url": "/genshin-mats/static/css/main.7ae99f05.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/genshin-mats/static/js/2.b5e3979e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d708f91c97f258b5f03",
-    "url": "/genshin-mats/static/js/main.342f9134.chunk.js"
+    "revision": "e7ad89fe77cdd0ad166d",
+    "url": "/genshin-mats/static/js/main.be91ec5f.chunk.js"
   },
   {
     "revision": "1907460956986eff318d",
