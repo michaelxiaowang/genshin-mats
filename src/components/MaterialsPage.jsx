@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import TypeFilter from './TypeFilter';
 import "./MaterialsPage.css";
 
 function MaterialsPage(props) {
+  const [searchText, setSearchText] = useState('');
+  const [dayGroup, setDayGroup] = useState(undefined);
+  const [materialType, setMaterialType] = useState(undefined);
+
   let materials = {};
   Object.entries(props.state.characters)
     .filter(([key, value]) => value['stage'] !== -1)
@@ -35,6 +40,7 @@ function MaterialsPage(props) {
       Object.entries(talents).forEach(([talent, level]) => {
         for (let i = level - 1; i < 9; i++) {
           const requirements = props.stages.talents[i];
+          const crown_qty = requirements.crown_qty;
           const talent_boss_qty = requirements.talent_boss_qty;
           const talent_book_stg = requirements.talent_book_stg;
           const talent_book_qty = requirements.talent_book_qty;
@@ -43,6 +49,7 @@ function MaterialsPage(props) {
           const talent_boss = props.materials[details.talent_boss].name;
           const talent_book = props.materials[(character === 'traveler' ? details.talent_book[i % 3] : details.talent_book) + "_" + talent_book_stg].name;
           const common = props.materials[(character === 'traveler' ? details.talent_common : details.common) + "_" + common_stg].name;
+          addMaterial(materials, 'Crown of Sagehood', crown_qty);
           addMaterial(materials, talent_boss, talent_boss_qty);
           addMaterial(materials, talent_book, talent_book_qty);
           addMaterial(materials, common, common_qty);
@@ -53,10 +60,25 @@ function MaterialsPage(props) {
   
   calculateWeaponMaterials(materials, props.state.weapons, props.stages.weapons, props.weapons, props.materials);
   let names = Object.keys(materials);
-  names = Object.values(props.materials).map(material => material.name).filter(name => names.includes(name));
+  names = Object.values(props.materials)
+    .filter(material => material.name.toLowerCase().includes(searchText.toLowerCase()))
+    .filter(material => dayGroup === undefined || !material.hasOwnProperty('day_group') || (material.hasOwnProperty('day_group') && material.day_group === dayGroup))
+    .filter(material => !materialType || material.type === materialType)
+    .map(material => material.name).filter(name => names.includes(name));
 
   return (
-    <div>
+    <>
+      <div className="filters">
+        <div className="search-filter">
+          <input
+            type="text"
+            value={searchText}
+            placeholder="Search for a weapon..."
+            onChange={(e) => setSearchText(e.target.value)} />
+        </div>
+        <TypeFilter type="material" checked={materialType} selectFilter={setMaterialType} />
+        <TypeFilter type="days" checked={dayGroup} selectFilter={setDayGroup} />
+      </div>
       <ul className="material-list">
         {
           names.map(material => (
@@ -69,7 +91,7 @@ function MaterialsPage(props) {
           ))
         }
       </ul>
-    </div>
+    </>
   )
 }
 

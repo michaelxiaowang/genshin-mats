@@ -1,264 +1,268 @@
 {
   "diamond_crystal_1": {
     "name": "Brilliant Diamond Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "diamond_crystal_2": {
     "name": "Brilliant Diamond Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "diamond_crystal_3": {
     "name": "Brilliant Diamond Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "diamond_crystal_4": {
     "name": "Brilliant Diamond Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "anemo_crystal_1": {
     "name": "Vayuda Turquoise Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "anemo_crystal_2": {
     "name": "Vayuda Turquoise Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "anemo_crystal_3": {
     "name": "Vayuda Turquoise Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "anemo_crystal_4": {
     "name": "Vayuda Turquoise Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "cryo_crystal_1": {
     "name": "Shivada Jade Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "cryo_crystal_2": {
     "name": "Shivada Jade Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "cryo_crystal_3": {
     "name": "Shivada Jade Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "cryo_crystal_4": {
     "name": "Shivada Jade Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "electro_crystal_1": {
     "name": "Vajrada Amethyst Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "electro_crystal_2": {
     "name": "Vajrada Amethyst Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "electro_crystal_3": {
     "name": "Vajrada Amethyst Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "electro_crystal_4": {
     "name": "Vajrada Amethyst Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "geo_crystal_1": {
     "name": "Prithiva Topaz Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "geo_crystal_2": {
     "name": "Prithiva Topaz Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "geo_crystal_3": {
     "name": "Prithiva Topaz Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "geo_crystal_4": {
     "name": "Prithiva Topaz Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "hydro_crystal_1": {
     "name": "Varunada Lazurite Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "hydro_crystal_2": {
     "name": "Varunada Lazurite Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "hydro_crystal_3": {
     "name": "Varunada Lazurite Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "hydro_crystal_4": {
     "name": "Varunada Lazurite Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "pyro_crystal_1": {
     "name": "Agnidus Agate Sliver",
-    "type": "crystal"
+    "type": "character"
   },
   "pyro_crystal_2": {
     "name": "Agnidus Agate Fragment",
-    "type": "crystal"
+    "type": "character"
   },
   "pyro_crystal_3": {
     "name": "Agnidus Agate Chunk",
-    "type": "crystal"
+    "type": "character"
   },
   "pyro_crystal_4": {
     "name": "Agnidus Agate Gemstone",
-    "type": "crystal"
+    "type": "character"
   },
   "anemo_elemental": {
     "name": "Hurricane Seed",
-    "type": "elemental"
+    "type": "character"
   },
   "cryo_elemental": {
     "name": "Hoarfrost Core",
-    "type": "elemental"
+    "type": "character"
   },
   "electro_elemental": {
     "name": "Lightning Prism",
-    "type": "elemental"
+    "type": "character"
   },
   "geo_elemental": {
     "name": "Basalt Pillar",
-    "type": "elemental"
+    "type": "character"
   },
   "hydro_elemental": {
     "name": "Cleansing Heart",
-    "type": "elemental"
+    "type": "character"
   },
   "pyro_elemental": {
     "name": "Everflame Seed",
-    "type": "elemental"
+    "type": "character"
+  },
+  "crown_of_sagehood": {
+    "name": "Crown of Sagehood",
+    "type": "talent"
   },
   "tail_of_boreas": {
     "name": "Tail of Boreas",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "ring_of_boreas": {
     "name": "Ring of Boreas",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "spirit_locket_of_boreas": {
     "name": "Spirit Locket of Boreas",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "dvalins_plume": {
     "name": "Dvalin's Plume",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "dvalins_claw": {
     "name": "Dvalin's Claw",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "dvalins_sigh": {
     "name": "Dvalin's Sigh",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "tusk_of_monoceros_caeli": {
     "name": "Tusk of Monoceros Caeli",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "shard_of_a_foul_legacy": {
     "name": "Shard of a Foul Legacy",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "shadow_of_the_warrior": {
     "name": "Shadow of the Warrior",
-    "type": "talent_boss"
+    "type": "talent"
   },
   "freedom_1": {
     "name": "Teachings of \"Freedom\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "freedom_2": {
     "name": "Guide to \"Freedom\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "freedom_3": {
     "name": "Philosophies of \"Freedom\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "resistance_1": {
     "name": "Teachings of \"Resistance\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "resistance_2": {
     "name": "Guide to \"Resistance\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "resistance_3": {
     "name": "Philosophies of \"Resistance\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "ballad_1": {
     "name": "Teachings of \"Ballad\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "ballad_2": {
     "name": "Guide to \"Ballad\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "ballad_3": {
     "name": "Philosophies of \"Ballad\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "prosperity_1": {
     "name": "Teachings of \"Prosperity\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "prosperity_2": {
     "name": "Guide to \"Prosperity\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "prosperity_3": {
     "name": "Philosophies of \"Prosperity\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 1
   },
   "diligence_1": {
     "name": "Teachings of \"Diligence\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "diligence_2": {
     "name": "Guide to \"Diligence\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "diligence_3": {
     "name": "Philosophies of \"Diligence\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 2
   },
   "gold_1": {
     "name": "Teachings of \"Gold\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "gold_2": {
     "name": "Guide to \"Gold\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "gold_3": {
     "name": "Philosophies of \"Gold\"",
-    "type": "talent_book",
+    "type": "talent",
     "day_group": 3
   },
   "decarabian_1": {

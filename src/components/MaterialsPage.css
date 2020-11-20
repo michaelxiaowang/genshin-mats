@@ -6,6 +6,7 @@ h1 {
 }
 
 .material-list {
+  margin-left: 1rem;
   padding: 0;
 }
 
@@ -15,10 +16,6 @@ h1 {
   align-items: center;
   padding: 0.5rem;
 }
-
-/* .material:nth-child(odd) {
-  background: #36384a;
-} */
 
 .material-image-container {
   display: flex;

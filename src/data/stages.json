@@ -64,6 +64,7 @@
   "talents": [
     {
       "level": 2,
+      "crown_qty": 0,
       "talent_boss_qty": 0,
       "talent_book_stg": 1,
       "talent_book_qty": 3,
@@ -73,6 +74,7 @@
     },
     {
       "level": 3,
+      "crown_qty": 0,
       "talent_boss_qty": 0,
       "talent_book_stg": 2,
       "talent_book_qty": 2,
@@ -82,6 +84,7 @@
     },
     {
       "level": 4,
+      "crown_qty": 0,
       "talent_boss_qty": 0,
       "talent_book_stg": 2,
       "talent_book_qty": 4,
@@ -91,6 +94,7 @@
     },
     {
       "level": 5,
+      "crown_qty": 0,
       "talent_boss_qty": 0,
       "talent_book_stg": 2,
       "talent_book_qty": 6,
@@ -100,6 +104,7 @@
     },
     {
       "level": 6,
+      "crown_qty": 0,
       "talent_boss_qty": 0,
       "talent_book_stg": 2,
       "talent_book_qty": 9,
@@ -109,6 +114,7 @@
     },
     {
       "level": 7,
+      "crown_qty": 0,
       "talent_boss_qty": 1,
       "talent_book_stg": 3,
       "talent_book_qty": 4,
@@ -118,6 +124,7 @@
     },
     {
       "level": 8,
+      "crown_qty": 0,
       "talent_boss_qty": 1,
       "talent_book_stg": 3,
       "talent_book_qty": 6,
@@ -127,7 +134,8 @@
     },
     {
       "level": 9,
-      "talent_boss_qty": 1,
+      "crown_qty": 0,
+      "talent_boss_qty": 2,
       "talent_book_stg": 3,
       "talent_book_qty": 9,
       "common_stg": 3,
@@ -136,6 +144,7 @@
     },
     {
       "level": 10,
+      "crown_qty": 1,
       "talent_boss_qty": 2,
       "talent_book_stg": 3,
       "talent_book_qty": 12,

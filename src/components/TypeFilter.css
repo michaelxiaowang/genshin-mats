@@ -1,4 +1,4 @@
-.type-filter input {
+.filter-input {
   display: none;
 }
 
@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.type-filter img {
+.filter-image {
   max-width: 2.5rem;
   max-height: 2.5rem;
   box-sizing: border-box;
@@ -18,8 +18,18 @@
   opacity: 0.3;
 }
 
-.type-filter img:hover,
-.type-filter input:checked + label img {
+.filter-text {
+  padding: 0.25rem;
+  background: #36384a;
+  opacity: 0.3;
+  font-size: 14px;
+  
+}
+
+.filter-image:hover,
+.filter-text:hover,
+.filter-input:checked + .filter-label .filter-text,
+.filter-input:checked + .filter-label .filter-image {
   opacity: 1;
   background: #36384a;
 }
