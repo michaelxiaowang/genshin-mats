@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import TypeFilter from './TypeFilter';
+import { calculateCharacterMaterials, calculateTalentMaterials, calculateWeaponMaterials } from '../utils';
 import "./MaterialsPage.css";
 
 function MaterialsPage(props) {
@@ -11,54 +12,41 @@ function MaterialsPage(props) {
   Object.entries(props.state.characters)
     .filter(([key, value]) => value['stage'] !== -1)
     .forEach(([key, value]) => {
-      const characters = props.characters;
-      const character = key;
-      const details = characters[character];
-      const element = props.characters[key.toLowerCase()].type;
-      const elemental = element !== 'flex' ? props.materials[element + '_elemental'].name : undefined;
-      const specialty = props.materials[props.characters[key.toLowerCase()].specialty].name;
-      // character ascension
+      // character ascension materials
       for (let i = value.stage; i < 6; i++) {
-        let stage = props.stages.characters[i];
-        const crystal = props.materials[(element === 'flex' ? 'diamond' : element) + '_crystal_' + stage.crystal_stg].name;
-        const common = props.materials[props.characters[key.toLowerCase()].common + '_' + stage.common_stg].name;
-        materials[crystal] = materials.hasOwnProperty(crystal) ? materials[crystal] + stage.crystal_qty : stage.crystal_qty;
-        materials[elemental] = materials.hasOwnProperty(elemental) ? materials[elemental] + stage.elemental_qty : stage.elemental_qty;
-        materials[specialty] = materials.hasOwnProperty(specialty) ? materials[specialty] + stage.specialty_qty : stage.specialty_qty;
-        materials[common] = materials.hasOwnProperty(common) ? materials[common] + stage.common_qty : stage.common_qty;
-        addMaterial(materials, 'Mora', stage.mora);
+        Object.entries(calculateCharacterMaterials(key, i)).forEach(([item, item_qty]) => {
+          addMaterial(materials, item, item_qty);
+        });
       }
-      // talent ascension
+      // flatten traveler talents for different elements to one object
       let talents = {};
-      if (character === 'traveler') {
+      if (key === 'traveler') {
         Object.values(value.talents).reduce((allTalents, elementalTalents) => {
           return Object.assign(allTalents, { ...elementalTalents });
         }, talents);
       } else {
         talents = value.talents;
       }
-      Object.entries(talents).forEach(([talent, level]) => {
+      // talent ascension materials
+      Object.values(talents).forEach((level) => {
         for (let i = level - 1; i < 9; i++) {
-          const requirements = props.stages.talents[i];
-          const crown_qty = requirements.crown_qty;
-          const talent_boss_qty = requirements.talent_boss_qty;
-          const talent_book_stg = requirements.talent_book_stg;
-          const talent_book_qty = requirements.talent_book_qty;
-          const common_qty = requirements.common_qty;
-          const common_stg = requirements.common_stg;
-          const talent_boss = props.materials[details.talent_boss].name;
-          const talent_book = props.materials[(character === 'traveler' ? details.talent_book[i % 3] : details.talent_book) + "_" + talent_book_stg].name;
-          const common = props.materials[(character === 'traveler' ? details.talent_common : details.common) + "_" + common_stg].name;
-          addMaterial(materials, 'Crown of Sagehood', crown_qty);
-          addMaterial(materials, talent_boss, talent_boss_qty);
-          addMaterial(materials, talent_book, talent_book_qty);
-          addMaterial(materials, common, common_qty);
-          addMaterial(materials, 'Mora', requirements.mora);
+          Object.entries(calculateTalentMaterials(key, i)).forEach(([item, item_qty]) => {
+            addMaterial(materials, item, item_qty);
+          });
         }
       })
     });
   
-  calculateWeaponMaterials(materials, props.state.weapons, props.stages.weapons, props.weapons, props.materials);
+  // weapon ascension materials
+  Object.entries(props.state.weapons)
+    .filter(([key, value]) => value['stage'] !== -1)
+    .forEach(([key, value]) => {
+      for (let i = value.stage; i < 6; i++) {
+        Object.entries(calculateWeaponMaterials(key, i)).forEach(([item, item_qty]) => {
+          addMaterial(materials, item, item_qty);
+        });
+      }
+    });
   let names = Object.keys(materials);
   names = Object.values(props.materials)
     .filter(material => material.name.toLowerCase().includes(searchText.toLowerCase()))
@@ -73,7 +61,7 @@ function MaterialsPage(props) {
           <input
             type="text"
             value={searchText}
-            placeholder="Search for a weapon..."
+            placeholder="Search for a material..."
             onChange={(e) => setSearchText(e.target.value)} />
         </div>
         <TypeFilter type="material" checked={materialType} selectFilter={setMaterialType} />
@@ -93,27 +81,6 @@ function MaterialsPage(props) {
       </ul>
     </>
   )
-}
-
-function calculateWeaponMaterials(materials, weaponState, weaponStages, weaponInfo, materialInfo) {
-  Object.entries(weaponState)
-    .filter(([key, value]) => value['stage'] !== -1)
-    .forEach(([key, value]) => {
-        const weapon = key;
-        const details = weaponInfo[weapon];
-        for (let i = value.stage; i < 6; i++) {
-          const requirements = weaponStages[details.rarity][i];
-          const weapon_material = materialInfo[`${details.weapon}_${requirements.weapon_stg}`].name;
-          const common_material1 = materialInfo[`${details.common1}_${requirements.common_stg}`].name;
-          const common_material2 = materialInfo[`${details.common2}_${requirements.common_stg}`].name;
-          const weapon_qty = requirements.weapon_qty;
-          const common_qty_1 = requirements.common_qty_1;
-          const common_qty_2 = requirements.common_qty_2;
-          addMaterial(materials, weapon_material, weapon_qty);
-          addMaterial(materials, common_material1, common_qty_1);
-          addMaterial(materials, common_material2, common_qty_2);
-        }
-    });
 }
 
 function addMaterial(materials, name, qty) {

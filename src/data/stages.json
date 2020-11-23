@@ -137,9 +137,9 @@
       "crown_qty": 0,
       "talent_boss_qty": 2,
       "talent_book_stg": 3,
-      "talent_book_qty": 9,
+      "talent_book_qty": 12,
       "common_stg": 3,
-      "common_qty": 15,
+      "common_qty": 9,
       "mora": 450000
     },
     {
@@ -147,9 +147,9 @@
       "crown_qty": 1,
       "talent_boss_qty": 2,
       "talent_book_stg": 3,
-      "talent_book_qty": 12,
+      "talent_book_qty": 16,
       "common_stg": 3,
-      "common_qty": 20,
+      "common_qty": 12,
       "mora": 700000
     }
   ],

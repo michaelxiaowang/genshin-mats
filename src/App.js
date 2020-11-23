@@ -4,7 +4,6 @@ import CharactersPage from './components/CharactersPage';
 import CharacterInfo from './components/CharacterInfo';
 import WeaponsPage from './components/WeaponsPage';
 import MaterialsPage from './components/MaterialsPage';
-import Stages from './data/stages.json';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
 import Weapons from './data/weapons.json';
@@ -186,10 +185,7 @@ class App extends React.Component {
             <Route path="/materials" render={(props) => (
               <MaterialsPage
                 state={this.state}
-                stages={Stages}
-                characters={Characters}
-                materials={Materials}
-                weapons={Weapons} />
+                materials={Materials} />
             )} />
           </div>
         </>

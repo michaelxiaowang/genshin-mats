@@ -22,6 +22,7 @@ html, body, #root, .App {
 }
 
 .nav-list-item {
+  color: white;
   margin-right: 1rem;
 }
 

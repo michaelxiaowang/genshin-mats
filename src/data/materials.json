@@ -1,17 +1,17 @@
 {
-  "diamond_crystal_1": {
+  "flex_crystal_1": {
     "name": "Brilliant Diamond Sliver",
     "type": "character"
   },
-  "diamond_crystal_2": {
+  "flex_crystal_2": {
     "name": "Brilliant Diamond Fragment",
     "type": "character"
   },
-  "diamond_crystal_3": {
+  "flex_crystal_3": {
     "name": "Brilliant Diamond Chunk",
     "type": "character"
   },
-  "diamond_crystal_4": {
+  "flex_crystal_4": {
     "name": "Brilliant Diamond Gemstone",
     "type": "character"
   },
