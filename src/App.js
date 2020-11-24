@@ -3,6 +3,7 @@ import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
 import CharactersPage from './components/CharactersPage';
 import CharacterInfo from './components/CharacterInfo';
 import WeaponsPage from './components/WeaponsPage';
+import WeaponInfo from './components/WeaponInfo';
 import MaterialsPage from './components/MaterialsPage';
 import Characters from './data/characters.json';
 import Materials from './data/materials.json';
@@ -173,7 +174,7 @@ class App extends React.Component {
                 getTravelerElement={this.getTravelerElement}
                 setTravelerElement={this.setTravelerElement} />
             )} />
-            <Route path="/weapons" render={(props) => (
+            <Route exact path="/weapons" render={(props) => (
               <WeaponsPage
                 weapons={Weapons}
                 selected={this.isWeaponSelected}
@@ -181,6 +182,14 @@ class App extends React.Component {
                 getWeaponStage={this.getWeaponStage}
                 setWeaponStage={this.setWeaponStage}
               />
+            )} />
+            <Route path="/weapons/:weapon" render={(props) => (
+              <WeaponInfo
+                weapon={Weapons[props.match.params.weapon]}
+                selected={this.isWeaponSelected}
+                stage={this.getWeaponStage(props.match.params.weapon)}
+                toggleWeapon={this.toggleWeapon}
+                setWeaponStage={this.setWeaponStage} />
             )} />
             <Route path="/materials" render={(props) => (
               <MaterialsPage

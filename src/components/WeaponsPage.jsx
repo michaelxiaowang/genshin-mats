@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { NavLink } from "react-router-dom";
 import StarLevel from './StarLevel';
 import TypeFilter from './TypeFilter';
 import "./WeaponsPage.css";
@@ -41,7 +42,7 @@ function WeaponsPage(props) {
                       disabled={!props.selected(key)}
                       setStage={props.setWeaponStage}
                     />
-                    <label className="weapon-name">{value.name}</label>
+                    <NavLink to={`/weapons/${key}`} className="weapon-name">{value.name}</NavLink>
                   </div>
                 </div>
               ))
