@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/genshin-mats/static/css/main.d38e8cc3.chunk.css",
-    "main.js": "/genshin-mats/static/js/main.dc32f6fa.chunk.js",
-    "main.js.map": "/genshin-mats/static/js/main.dc32f6fa.chunk.js.map",
+    "main.css": "/genshin-mats/static/css/main.27d7470d.chunk.css",
+    "main.js": "/genshin-mats/static/js/main.8bc5d0dc.chunk.js",
+    "main.js.map": "/genshin-mats/static/js/main.8bc5d0dc.chunk.js.map",
     "runtime-main.js": "/genshin-mats/static/js/runtime-main.ffe51f6a.js",
     "runtime-main.js.map": "/genshin-mats/static/js/runtime-main.ffe51f6a.js.map",
-    "static/js/2.d76a8293.chunk.js": "/genshin-mats/static/js/2.d76a8293.chunk.js",
-    "static/js/2.d76a8293.chunk.js.map": "/genshin-mats/static/js/2.d76a8293.chunk.js.map",
+    "static/js/2.8793fca6.chunk.js": "/genshin-mats/static/js/2.8793fca6.chunk.js",
+    "static/js/2.8793fca6.chunk.js.map": "/genshin-mats/static/js/2.8793fca6.chunk.js.map",
     "index.html": "/genshin-mats/index.html",
-    "precache-manifest.82a8e19ab61173b1349413951c6d2e42.js": "/genshin-mats/precache-manifest.82a8e19ab61173b1349413951c6d2e42.js",
+    "precache-manifest.69fbafe86e521373a2de41f729a1a897.js": "/genshin-mats/precache-manifest.69fbafe86e521373a2de41f729a1a897.js",
     "service-worker.js": "/genshin-mats/service-worker.js",
-    "static/css/main.d38e8cc3.chunk.css.map": "/genshin-mats/static/css/main.d38e8cc3.chunk.css.map",
-    "static/js/2.d76a8293.chunk.js.LICENSE.txt": "/genshin-mats/static/js/2.d76a8293.chunk.js.LICENSE.txt"
+    "static/css/main.27d7470d.chunk.css.map": "/genshin-mats/static/css/main.27d7470d.chunk.css.map",
+    "static/js/2.8793fca6.chunk.js.LICENSE.txt": "/genshin-mats/static/js/2.8793fca6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ffe51f6a.js",
-    "static/js/2.d76a8293.chunk.js",
-    "static/css/main.d38e8cc3.chunk.css",
-    "static/js/main.dc32f6fa.chunk.js"
+    "static/js/2.8793fca6.chunk.js",
+    "static/css/main.27d7470d.chunk.css",
+    "static/js/main.8bc5d0dc.chunk.js"
   ]
 }
