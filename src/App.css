@@ -52,10 +52,6 @@ button {
   padding: 0;
 }
 
-button:hover {
-  background: #36384a;
-}
-
 button:focus {
   outline: none;
 }

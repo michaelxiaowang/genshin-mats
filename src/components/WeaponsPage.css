@@ -8,10 +8,6 @@
   border-radius: 0.5rem;
 }
 
-.weapon-toggle:hover .weapon-image {
-  opacity: 1;
-}
-
 .weapon-image.inactive {
   opacity: 0.3;
 }
@@ -24,7 +20,7 @@
 .weapon-details {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0.5rem;
+  margin: 0 0.5rem 3rem 0.5rem;
   width: 8rem;
 }
 

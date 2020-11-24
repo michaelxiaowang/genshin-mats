@@ -26,8 +26,8 @@ export const calculateTalentMaterials = (character, level) => {
   const details = Characters[character];
   const requirements = Stages.talents[level];
   const talent_boss = Materials[details.talent_boss].name;
-  const talent_book = Materials[(character === 'traveler' ? details.talent_book[level % 3] : details.talent_book) + "_" + requirements.talent_book_stg].name;
-  const common = Materials[(character === 'traveler' ? details.talent_common : details.common) + "_" + requirements.common_stg].name;
+  const talent_book = Materials[(character === 'traveler' ? details.talent_book[level % 3] : details.talent_book) + '_' + requirements.talent_book_stg].name;
+  const common = Materials[(character === 'traveler' ? details.talent_common : details.common) + '_' + requirements.common_stg].name;
   return Object.assign({}, {
     'Crown of Sagehood': requirements.crown_qty,
     [talent_boss]: requirements.talent_boss_qty,
