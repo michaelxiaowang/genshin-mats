@@ -22,11 +22,11 @@ html, body, #root, .App {
 }
 
 .nav-list-item {
-  color: white;
   margin-right: 1rem;
 }
 
 .nav-link {
+  color: white;
   display: inline-block;
   height: 2.5rem;
   text-decoration: none;
