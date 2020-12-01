@@ -346,5 +346,33 @@
       "Guhua Sword - Fatal Rainscreen",
       "Guhua Sword - Raincutter"
     ]
+  },
+  "xinyan": {
+    "name": "Xinyan",
+    "type": "pyro",
+    "weapon": "claymore",
+    "specialty": "violetgrass",
+    "common": "treasure_insignia",
+    "talent_boss": "tusk_of_monoceros_caeli",
+    "talent_book": "gold",
+    "talents": [
+      "Dance on Fire",
+      "Sweeping Fervor",
+      "Riff Revolution"
+    ]
+  },
+  "zhongli": {
+    "name": "Zhongli",
+    "type": "geo",
+    "weapon": "polearm",
+    "specialty": "cor_lapis",
+    "common": "slime",
+    "talent_boss": "tusk_of_monoceros_caeli",
+    "talent_book": "gold",
+    "talents": [
+      "Rain of Stone",
+      "Dominus Lapidis",
+      "Plant Befall"
+    ]
   }
 }
