@@ -95,6 +95,14 @@
     "common1": "chaos",
     "common2": "slime"
   },
+  "memory_of_dust": {
+    "name": "Memory of Dust",
+    "type": "catalyst",
+    "rarity": 5,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "mask"
+  },
   "skyward_atlas": {
     "name": "Skyward Atlas",
     "type": "catalyst",
@@ -182,6 +190,14 @@
     "weapon": "boreal",
     "common1": "ley_line",
     "common2": "slime"
+  },
+  "the_unforged": {
+    "name": "The Unforged",
+    "type": "claymore",
+    "rarity": 5,
+    "weapon": "mist_veiled_elixir",
+    "common1": "mist",
+    "common2": "treasure_insignia"
   },
   "wolfs_gravestone": {
     "name": "Wolf's Gravestone",
@@ -278,6 +294,14 @@
     "weapon": "dandelion_gladiator",
     "common1": "chaos",
     "common2": "scroll"
+  },
+  "vortex_vanquisher": {
+    "name": "Vortex Vanquisher",
+    "type": "polearm",
+    "rarity": 5,
+    "weapon": "aerosiderite",
+    "common1": "bone",
+    "common2": "treasure_insignia"
   },
   "blackcliff_pole": {
     "name": "Blackcliff Pole",
